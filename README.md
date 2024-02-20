@@ -20,6 +20,9 @@ Feel free to contriubte by applying theses patterns in different programming lan
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+[![All Contributors](https://img.shields.io/github/all-contributors/mahyoussef/ultimate-design-patterns?color=ee8449&style=flat-square)](#contributors)
+
+
 ## License
 
 This project is licensed under the terms of the MIT license.

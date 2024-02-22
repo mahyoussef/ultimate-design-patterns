@@ -1,9 +1,8 @@
 # ultimate-design-patterns
 
 Mastering classical design patterns with practical examples in the ultimate design patterns bundle.
-
 <p>
-  <a href="https://www.udemy.com/course/draft/5825958/?referralCode=C4486750B8FA2ABC3F46"><img src="images/ultimate-design-patterns.png" /> </a>
+  <a href="https://www.udemy.com/course/ultimate-design-patterns/?referralCode=C4486750B8FA2ABC3F46"><img src="images/ultimate-design-patterns.png" /> </a>
 </p>
 
 

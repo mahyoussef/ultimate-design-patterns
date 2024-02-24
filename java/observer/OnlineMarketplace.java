@@ -41,7 +41,7 @@ public class OnlineMarketplace {
         notifySubscribers(EventType.JOB_OPENING, "New opening position is available: " + jobTitle);
     }
 
-    public void notifySubscribers(EventType eventType, String message) {
+    private void notifySubscribers(EventType eventType, String message) {
         subscribers.get(eventType).forEach(subscriber -> subscriber.notify(message));
     }
 

@@ -36,13 +36,6 @@ export class OnlineMarketplace {
     );
   }
 
-  addNewJobOpening(jobTitle: string) {
-    this.notifySubscribers(
-      "JOB_OPENING",
-      `New opening position is available: ${jobTitle}`
-    );
-  }
-
   addNewOffer(offer: Offer) {
     this.offers.push(offer);
     this.notifySubscribers(
@@ -51,7 +44,14 @@ export class OnlineMarketplace {
     );
   }
 
-  notifySubscribers(eventType: EventType, message: string) {
+  addNewJobOpening(jobTitle: string) {
+    this.notifySubscribers(
+      "JOB_OPENING",
+      `New opening position is available: ${jobTitle}`
+    );
+  }
+
+  private notifySubscribers(eventType: EventType, message: string) {
     this.subscribers[eventType].forEach((subscriber) =>
       subscriber.notify(message)
     );

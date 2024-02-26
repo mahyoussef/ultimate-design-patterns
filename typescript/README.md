@@ -34,4 +34,8 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 ## List of Patterns
 
+### Behavioral Design Patterns
+
 - **Observer**: [UML diagram](observer/uml-diagram.md) - [implementation](observer/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/exercise/bundle.ts)
+
+- **Strategy**: [UML diagram](strategy/uml-diagram.md) - [implementation](strategy/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/exercise/bundle.ts)

@@ -1,4 +1,4 @@
-export enum CardType {
+enum CardType {
   VISA,
   MASTER_CARD,
   AMERICAN_EXPRESS,
@@ -6,7 +6,7 @@ export enum CardType {
   CARTE_BANCAIRE,
 }
 
-export enum PaymentMethodOptions {
+enum PaymentMethodOptions {
   VISA,
   MASTER_CARD,
   PAYPAL,
@@ -18,7 +18,7 @@ interface PaymentMethod {
   calculatePaymentFees(amount: number): void;
 }
 
-export interface PaymentMethodFactory {
+interface PaymentMethodFactory {
   createPaymentMethod(
     cardType: CardType,
     cardHolder: string,
@@ -268,7 +268,7 @@ class LocalPaymentMethodFactory implements PaymentMethodFactory {
     throw new Error("Card type not supported...");
   }
 }
-export class InternationalPaymentMethodFactory implements PaymentMethodFactory {
+class InternationalPaymentMethodFactory implements PaymentMethodFactory {
   createPaymentMethod(
     cardType: CardType,
     cardHolder: string,
@@ -289,7 +289,7 @@ export class InternationalPaymentMethodFactory implements PaymentMethodFactory {
   }
 }
 
-export class PaymentProcessor {
+class PaymentProcessor {
   private readonly paymentMethodFactory: PaymentMethodFactory;
 
   constructor(paymentMethodFactory: PaymentMethodFactory) {
@@ -320,3 +320,24 @@ export class PaymentProcessor {
   }
 }
 
+const paymentMethodFactory: PaymentMethodFactory =
+  new InternationalPaymentMethodFactory();
+const paymentProcessor: PaymentProcessor = new PaymentProcessor(
+  paymentMethodFactory
+);
+
+const exampleCardType: CardType = CardType.VISA;
+const exampleAmount: number = 100.0;
+const exampleCardHolder: string = "John Doe";
+const exampleCardNumber: string = "1234567890123456";
+const exampleCvv: string = "123";
+const exampleExpiryDate: string = "12/24";
+
+paymentProcessor.processPayment(
+  exampleCardType,
+  exampleAmount,
+  exampleCardHolder,
+  exampleCardNumber,
+  exampleCvv,
+  exampleExpiryDate
+);

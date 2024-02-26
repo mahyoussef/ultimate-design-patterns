@@ -1,9 +1,7 @@
-import {
-  PaymentMethodFactory,
-  InternationalPaymentMethodFactory,
-  PaymentProcessor,
-  CardType,
-} from "./bundle";
+import { CardType } from "./CardType";
+import { InternationalPaymentMethodFactory } from "./InternationalPaymentMethodFactory";
+import { PaymentMethodFactory } from "./PaymentMethodFactory";
+import { PaymentProcessor } from "./PaymentProcessor";
 
 // Example of usage
 const paymentMethodFactory: PaymentMethodFactory =

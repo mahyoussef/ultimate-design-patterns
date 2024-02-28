@@ -10,6 +10,11 @@ Mastering classical design patterns with practical examples in the ultimate desi
 Feel free to contriubte by applying theses patterns in different programming languages as well as we are open for any enhancements through pull requests.
 
 ## Contributors
+Thanks to all the people who already contributed!
+
+<a href="https://github.com/mahyoussef/ultimate-design-patterns/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mahyoussef/ultimate-design-patterns" />
+</a>
 
 ## License
 

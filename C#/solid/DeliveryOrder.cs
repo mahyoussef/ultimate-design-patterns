@@ -6,7 +6,7 @@ namespace Solid
     {
         private const double SHIPPING_COST = 10.0;
 
-        public override double CalculateShippingCost()
+        public double CalculateShippingCost()
         {
             return Price + SHIPPING_COST;
         }

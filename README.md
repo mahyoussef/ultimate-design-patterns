@@ -12,9 +12,13 @@ Feel free to contriubte by applying theses patterns in different programming lan
 ## Contributors
 Thanks to all the people who already contributed!
 
-<a href="https://github.com/mahyoussef/ultimate-design-patterns/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mahyoussef/ultimate-design-patterns" />
-</a>
+| Name           | Contribution     | GitHub Avatar                                     |
+|----------------|------------------|---------------------------------------------------|
+| Hatem Hosny    | Typescript       | <img src="https://github.com/hatemhosny.png" alt="Hatem Hosny" width="100" height="100"> |
+| Mohamed Lotfy  | Typescript       | <img src="https://github.com/mohamedlotfe.png" alt="Mohamed Lotfy" width="100" height="100">|
+| Amir Elsagan   | C#               | <img src="https://github.com/amirosagan.png" alt="Amir Elsagan" width="100" height="100">|
+| Moamen Ashraf  | C#               | <img src="https://github.com/moamen189.png" alt="Moamen Ashraf" width="100" height="100">|
+| Ahmed Mahdy    | Dart             | <img src="https://github.com/elnaddar.png" alt="Ahmed Mahdy" width="100" height="100">|
 
 ## License
 

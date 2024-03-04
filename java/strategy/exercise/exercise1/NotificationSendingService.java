@@ -1,4 +1,4 @@
-package strategy.exercise;
+package strategy.exercise.exercise1;
 
 public interface NotificationSendingService {
 

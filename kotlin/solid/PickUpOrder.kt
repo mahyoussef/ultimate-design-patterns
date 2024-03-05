@@ -1,4 +1,4 @@
 package solid
 
-class PickUpOrder(name:String, price:Double):Order(name, price) {
+class PickUpOrder(name:String, price:Double):Order(name, price){
 }

@@ -1,16 +1,13 @@
 package solid
 
-class Customer(val name:String, val email:String) {
-    public fun subscribeToNewProductsAvailability(){
-        println("Subscribing to new products availability...")
-    }
-    public fun subscribeToSMSNotification(){
-        println("Subscribing to SMS notification...")
-    }
-    public fun updateUserProfile(customer: Customer){
+class Customer(val name:String, val email:String): UserManagement{
+    override fun updateUserProfile(customer: Customer){
         println("Updating user profile ${customer.name}......" )
     }
-    public fun changePassword(customer: Customer){
+
+    override fun changePassword(customer: Customer, newPassword: String) {
         println("Updating user ${customer.name}.....")
     }
+
+
 }

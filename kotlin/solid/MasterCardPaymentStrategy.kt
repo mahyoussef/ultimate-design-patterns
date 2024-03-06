@@ -1,6 +1,6 @@
 package solid
 
-class MaterCardPaymentStrategy : ProcessPaymentStrategy {
+class MasterCardPaymentStrategy : ProcessPaymentStrategy {
     override fun processPayment() {
         println("Processing Master Card payments...")
     }

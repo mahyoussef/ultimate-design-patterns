@@ -2,37 +2,37 @@ namespace Singleton.Exercise;
 
 public sealed class SessionManager
 {
-    private static SessionManager instance;
-    private readonly Dictionary<string, string> userSessions;
+    private static SessionManager? s_instance;
+    private readonly Dictionary<string, string> _userSessions;
 
     private SessionManager()
     {
-        this.userSessions = [];
+        _userSessions = [];
     }
 
     public static SessionManager GetInstance()
     {
-        if (instance is null)
+        if (s_instance is null)
         {
             lock (typeof(SessionManager))
             {
-                instance ??= new SessionManager();
+                s_instance ??= new SessionManager();
             }
         }
 
-        return instance;
+        return s_instance;
     }
 
     public string CreateSession(string userId)
     {
         string sessionId = GenerateSessionId();
-        userSessions[sessionId] = userId;
+        _userSessions[sessionId] = userId;
         return sessionId;
     }
 
-    public string GetUserId(string sessionId)
+    public string? GetUserId(string sessionId)
     {
-        return userSessions.GetValueOrDefault(sessionId);
+        return _userSessions.GetValueOrDefault(sessionId);
     }
 
     private string GenerateSessionId()

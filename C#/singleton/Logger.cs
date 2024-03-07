@@ -10,7 +10,7 @@ namespace Singleton;
 /// </summary>
 public sealed class Logger
 {
-    private static Logger? instance;
+    private static Logger? s_instance;
     private LogLevel _logLevel = LogLevel.INFO;
     private readonly static object LockObject = new();
 
@@ -57,14 +57,14 @@ public sealed class Logger
     /// <returns>The same instance from the <see cref="Logger"/></returns>
     public static Logger GetInstance()
     {
-        if (instance is null)
+        if (s_instance is null)
         {
             lock (LockObject)
             {
-                instance ??= new Logger();
+                s_instance ??= new Logger();
             }
         }
 
-        return instance;
+        return s_instance;
     }
 }

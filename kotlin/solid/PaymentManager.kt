@@ -1,0 +1,6 @@
+package solid
+
+class PaymentManager {
+
+
+}

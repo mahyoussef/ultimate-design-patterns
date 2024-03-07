@@ -1,4 +1,4 @@
-package strategy.exercise;
+package strategy.exercise.exercise1;
 
 public class User {
     private final String email;

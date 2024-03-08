@@ -1,33 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Memento.Exercise;
 
-namespace dotnet.Memento.Exercise
+public sealed class History
 {
-    public class History
-    {
-        private Stack<CanvasState> prevStates;
+    private readonly Stack<CanvasState> _prevStates;
 
-        public History()
-        {
-
-            prevStates = new Stack<CanvasState>();
-        }
+    public History()
+        => _prevStates = new Stack<CanvasState>();
 
     public void SaveHistoryState(CanvasState canvasState)
-    {
-        prevStates.Push(canvasState);
-    }
+        => _prevStates.Push(canvasState);
 
-    public CanvasState Undo()
-    {
-        if (prevStates.Count > 0)
-        {
-            return prevStates.Pop();
-        }
-        return null;
-    }
-}
+    public CanvasState? Undo()
+        => _prevStates.Count > 0 ? _prevStates.Pop() : null;
 }

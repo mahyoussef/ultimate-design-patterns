@@ -1,4 +1,4 @@
-namespace dotnet.Observer.Quiz.Enum;
+namespace Observer.Quiz.Enum;
 
 public enum EventType
 {

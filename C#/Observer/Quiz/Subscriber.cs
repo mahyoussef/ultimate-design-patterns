@@ -1,8 +1,8 @@
 
 
-using dotnet.Observer.Quiz.Interfaces;
+using Observer.Quiz.Interfaces;
 
-namespace dotnet.Observer.Quiz;
+namespace Observer.Quiz;
 
 public class Subscriber : ISubscriber
 {

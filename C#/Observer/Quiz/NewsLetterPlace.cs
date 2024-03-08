@@ -1,6 +1,6 @@
-using dotnet.Observer.Quiz.Enum;
-using dotnet.Observer.Quiz.Interfaces;
-using dotnet.Observer.Quiz.Models;
+using Observer.Quiz.Enum;
+using Observer.Quiz.Interfaces;
+using Observer.Quiz.Models;
 
 public class NewsLetterPlace
 {

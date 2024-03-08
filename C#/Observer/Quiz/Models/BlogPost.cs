@@ -1,4 +1,4 @@
-namespace dotnet.Observer.Quiz.Models;
+namespace Observer.Quiz.Models;
 
 public class BlogPost
 {

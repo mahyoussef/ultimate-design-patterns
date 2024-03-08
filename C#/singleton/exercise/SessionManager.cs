@@ -1,49 +1,42 @@
-using System;
-using System.Collections.Generic;
+namespace Singleton.Exercise;
 
-namespace Singleton.Exercise
+public sealed class SessionManager
 {
-    public class SessionManager
+    private static SessionManager? s_instance;
+    private readonly Dictionary<string, string> _userSessions;
+
+    private SessionManager()
     {
-        private static SessionManager instance;
-        private Dictionary<string, string> userSessions;
+        _userSessions = [];
+    }
 
-        private SessionManager()
+    public static SessionManager GetInstance()
+    {
+        if (s_instance is null)
         {
-            this.userSessions = new Dictionary<string, string>();
-        }
-
-        public static SessionManager GetInstance()
-        {
-            if (instance == null)
+            lock (typeof(SessionManager))
             {
-                lock (typeof(SessionManager))
-                {
-                    if (instance == null)
-                    {
-                        instance = new SessionManager();
-                    }
-                }
+                s_instance ??= new SessionManager();
             }
-            return instance;
         }
 
-        public string CreateSession(string userId)
-        {
+        return s_instance;
+    }
 
-            string sessionId = GenerateSessionId();
-            userSessions[sessionId] = userId;
-            return sessionId;
-        }
+    public string CreateSession(string userId)
+    {
+        string sessionId = GenerateSessionId();
+        _userSessions[sessionId] = userId;
+        return sessionId;
+    }
 
-        public string GetUserId(string sessionId)
-        {
-            return userSessions.GetValueOrDefault(sessionId);
-        }
+    public string? GetUserId(string sessionId)
+    {
+        return _userSessions.GetValueOrDefault(sessionId);
+    }
 
-        private string GenerateSessionId()
-        {
-            return "SESSION_" + DateTimeOffset.Now.ToUnixTimeMilliseconds();
-        }
+    private string GenerateSessionId()
+    {
+        return $"SESSION_{DateTimeOffset.Now.ToUnixTimeMilliseconds()}";
     }
 }

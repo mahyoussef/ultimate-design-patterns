@@ -17,9 +17,11 @@ Thanks to all the people who already contributed!
 |----------------|------------------|---------------------------------------------------|
 | Hatem Hosny    | Typescript       | <img src="https://github.com/hatemhosny.png" alt="Hatem Hosny" width="100" height="100"> |
 | Mohamed Lotfy  | Typescript       | <img src="https://github.com/mohamedlotfe.png" alt="Mohamed Lotfy" width="100" height="100">|
+| Menna          | Typescript       | <img src="https://github.com/mennah4.png" alt="Menna" width="100" height="100">|
 | Amir Elsagan   | C#               | <img src="https://github.com/amirosagan.png" alt="Amir Elsagan" width="100" height="100">|
 | Moamen Ashraf  | C#               | <img src="https://github.com/moamen189.png" alt="Moamen Ashraf" width="100" height="100">|
 | Youssef Wael   | C#               | <img src="https://github.com/YoussefWaelMohamedLotfy.png" alt="Youssef Wael" width="100" height="100">|
+| Mohamed Zidan  | C#               | <img src="https://github.com/mazidan77.png" alt="Mohamed Zidan" width="100" height="100">|
 | Ahmed Mahdy    | Dart             | <img src="https://github.com/elnaddar.png" alt="Ahmed Mahdy" width="100" height="100">|
 | Rodina Moamen  | Kotlin           | <img src="https://github.com/rodinamomen.png" alt="Rodina Moamen" width="100" height="100">|
 | Abdelrahman Kosba  | Java           | <img src="https://github.com/abdelrahamn-kosba.png" alt="Abeldrahman Kosba" width="100" height="100">|

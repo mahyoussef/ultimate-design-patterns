@@ -1,11 +1,13 @@
-using dotnet.Strategy.Interfaces;
+using Strategy.Interfaces;
 
-namespace dotnet.Strategy.PricingStrategys;
+namespace Strategy.PricingStrategys;
 
-public class GoldPricingStrategy : IPricingStrategy
+public sealed class GoldPricingStrategy : IPricingStrategy
 {
+    /// <summary>
+    /// Gold subscription price calculation, 10% discount
+    /// </summary>
+    /// <param name="price"><inheritdoc/></param>
     public decimal CalculatePrice(decimal price)
-    {
-        return price - price * 0.1m;
-    }
+        => price - price * 0.1m;
 }

@@ -1,11 +1,13 @@
-using dotnet.Strategy.Interfaces;
+using Strategy.Interfaces;
 
-namespace dotnet.Strategy.PaymentStrategys;
+namespace Strategy.PaymentStrategys;
 
-public class PaypalPaymentStrategy : IPaymentStrategy
+public sealed class PaypalPaymentStrategy : IPaymentStrategy
 {
+    /// <summary>
+    /// Paypal payment processing
+    /// </summary>
+    /// <param name="amount"><inheritdoc/></param>
     public void ProcessPayment(decimal amount)
-    {
-        Console.WriteLine($"Processing paypal payment for {amount}");
-    }
+        => Console.WriteLine($"Processing paypal payment for {amount}");
 }

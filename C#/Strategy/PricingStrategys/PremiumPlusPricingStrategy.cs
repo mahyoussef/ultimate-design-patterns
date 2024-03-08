@@ -1,11 +1,13 @@
-using dotnet.Strategy.Interfaces;
+using Strategy.Interfaces;
 
-namespace dotnet.Strategy.PricingStrategys;
+namespace Strategy.PricingStrategys;
 
-public class PremiumPlusPricingStrategy : IPricingStrategy
+public sealed class PremiumPlusPricingStrategy : IPricingStrategy
 {
+    /// <summary>
+    /// Premium Plus subscription price calculation, 30% discount
+    /// </summary>
+    /// <param name="price"><inheritdoc/></param>
     public decimal CalculatePrice(decimal price)
-    {
-        return price - price * 0.3m;
-    }
+        => price - price * 0.3m;
 }

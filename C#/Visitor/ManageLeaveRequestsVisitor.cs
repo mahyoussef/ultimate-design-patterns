@@ -8,17 +8,17 @@ namespace dotnet.Visitor
 {
     public class ManageLeaveRequestsVisitor : IScheduleManagementVisitor
     {
-        public void visit(DayShiftScheduleManagement dayShiftScheduleManagement)
+        public void Visit(DayShiftScheduleManagement dayShiftScheduleManagement)
         {
             Console.WriteLine("Managing leave requests for day shift.");
         }
 
-        public void visit(NightShiftScheduleManagement nightShiftScheduleManagement)
+        public void Visit(NightShiftScheduleManagement nightShiftScheduleManagement)
         {
             Console.WriteLine("Managing leave requests for night shift.");
         }
 
-        public void visit(RemoteWorkShiftScheduleManagement remoteWorkShiftScheduleManagement)
+        public void Visit(RemoteWorkShiftScheduleManagement remoteWorkShiftScheduleManagement)
         {
            Console.WriteLine("Managing leave requests for remote work shift.");
         }

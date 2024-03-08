@@ -8,8 +8,8 @@ namespace dotnet.Visitor
 {
     public interface IScheduleManagement
     {
-        void generateReport();
-        void calculateOverTime();
-        void accept(IScheduleManagementVisitor scheduleManagementVisitor);
+        void GenerateReport();
+        void CalculateOverTime();
+        void Accept(IScheduleManagementVisitor scheduleManagementVisitor);
     }
 }

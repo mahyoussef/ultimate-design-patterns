@@ -8,8 +8,8 @@ namespace dotnet.Visitor
 {
        public interface IScheduleManagementVisitor
     {
-        void visit(DayShiftScheduleManagement dayShiftScheduleManagement);
-        void visit(NightShiftScheduleManagement nightShiftScheduleManagement);
-        void visit(RemoteWorkShiftScheduleManagement remoteWorkShiftScheduleManagement);
+        void Visit(DayShiftScheduleManagement dayShiftScheduleManagement);
+        void Visit(NightShiftScheduleManagement nightShiftScheduleManagement);
+        void Visit(RemoteWorkShiftScheduleManagement remoteWorkShiftScheduleManagement);
     }
 }

@@ -8,18 +8,18 @@ namespace dotnet.Visitor
 {
     public class DayShiftScheduleManagement : IScheduleManagement
     {
-        public void generateReport()
+        public void GenerateReport()
         {
             Console.WriteLine("Generating report for day shift...");
         }
-        public void calculateOverTime()
+        public void CalculateOverTime()
         {
             Console.WriteLine("Calculating over time for day shift..");
         }
 
-        public void accept(IScheduleManagementVisitor scheduleManagementVisitor)
+        public void Accept(IScheduleManagementVisitor scheduleManagementVisitor)
         {
-            scheduleManagementVisitor.visit(this);
+            scheduleManagementVisitor.Cisit(this);
         }
     }
 }

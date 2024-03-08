@@ -35,7 +35,7 @@ public sealed class SessionManager
         return _userSessions.GetValueOrDefault(sessionId);
     }
 
-    private string GenerateSessionId()
+    private static string GenerateSessionId()
     {
         return $"SESSION_{DateTimeOffset.Now.ToUnixTimeMilliseconds()}";
     }

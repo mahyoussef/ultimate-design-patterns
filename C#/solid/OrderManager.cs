@@ -1,10 +1,3 @@
+namespace SOLID;
 
-
-using System;
-
-namespace Solid
-{
-public class OrderManager {
-
-}
-}
+public sealed class OrderManager;

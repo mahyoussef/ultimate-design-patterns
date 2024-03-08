@@ -1,14 +1,9 @@
-using System;
+namespace SOLID;
 
-namespace Solid
+public sealed class DeliveryOrder : Order, IShippingCostCalculator
 {
-    public class DeliveryOrder : Order, ShippingCostCalculator
-    {
-        private const double SHIPPING_COST = 10.0;
+    private const double SHIPPING_COST = 10.0;
 
-        public double CalculateShippingCost()
-        {
-            return Price + SHIPPING_COST;
-        }
-    }
+    public double CalculateShippingCost()
+        => _price + SHIPPING_COST;
 }

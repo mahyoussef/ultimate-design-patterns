@@ -1,12 +1,7 @@
-using System;
+namespace SOLID;
 
-namespace Solid
+public sealed class VisaPaymentStrategy : IPaymentStrategy
 {
-    public class VisaPaymentStrategy : PaymentStrategy
-    {
-        public void ProcessPayment(double amount)
-        {
-            Console.WriteLine("Processing Visa card payments...");
-        }
-    }
+    public void ProcessPayment(double amount)
+        => Console.WriteLine("Processing Visa card payments...");
 }

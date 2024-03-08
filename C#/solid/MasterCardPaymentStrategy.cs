@@ -1,12 +1,7 @@
-using System;
+namespace SOLID;
 
-namespace Solid
+public sealed class MasterCardPaymentStrategy : IPaymentStrategy
 {
-    public class MasterCardPaymentStrategy : PaymentStrategy
-    {
-        public void ProcessPayment(double amount)
-        {
-            Console.WriteLine("Processing master card payments...");
-        }
-    }
+    public void ProcessPayment(double amount)
+        => Console.WriteLine("Processing master card payments...");
 }

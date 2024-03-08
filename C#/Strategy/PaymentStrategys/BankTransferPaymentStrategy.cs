@@ -1,11 +1,13 @@
-using dotnet.Strategy.Interfaces;
+using Strategy.Interfaces;
 
-namespace dotnet.Strategy.PaymentStrategys;
+namespace Strategy.PaymentStrategys;
 
-public class BankTransferPaymentStrategy : IPaymentStrategy
+public sealed class BankTransferPaymentStrategy : IPaymentStrategy
 {
+    /// <summary>
+    /// Bank Transfer payment processing
+    /// </summary>
+    /// <param name="amount"><inheritdoc/></param>
     public void ProcessPayment(decimal amount)
-    {
-        Console.WriteLine($"Processing bank transfer payment for {amount}");
-    }
+        => Console.WriteLine($"Processing bank transfer payment for {amount}");
 }

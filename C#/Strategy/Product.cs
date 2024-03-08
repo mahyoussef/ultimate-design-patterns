@@ -1,8 +1,8 @@
-using dotnet.Strategy.Interfaces;
+using Strategy.Interfaces;
 
-namespace dotnet.Strategy;
+namespace Strategy;
 
-public class Product
+public sealed class Product
 {
     public string Name { get; set; }
     public decimal Price { get; set; }
@@ -16,8 +16,10 @@ public class Product
         _pricingStrategy = pricingStrategy;
     }
 
+    /// <summary>
+    /// Calculate product price based on <see cref="IPricingStrategy"/> provided
+    /// </summary>
+    /// <returns>Price after being calculated based on subscription</returns>
     public decimal CalculatePrice()
-    {
-        return _pricingStrategy.CalculatePrice(Price);
-    }
+        => _pricingStrategy.CalculatePrice(Price);
 }

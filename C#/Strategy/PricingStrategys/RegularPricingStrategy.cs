@@ -1,11 +1,12 @@
-using dotnet.Strategy.Interfaces;
+using Strategy.Interfaces;
 
-namespace dotnet.Strategy.PricingStrategys;
+namespace Strategy.PricingStrategys;
 
 public class RegularPricingStrategy : IPricingStrategy
 {
-    public decimal CalculatePrice(decimal price)
-    {
-        return price;
-    }
+    /// <summary>
+    /// Regular pricing strategy, no discounts
+    /// </summary>
+    /// <param name="price"><inheritdoc/></param>
+    public decimal CalculatePrice(decimal price) => price;
 }

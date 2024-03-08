@@ -1,11 +1,9 @@
-using dotnet.Strategy.Quiz.Interfaces;
+using Strategy.Quiz.Interfaces;
 
-namespace dotnet.Strategy.Quiz.NotificationStrategys;
+namespace Strategy.Quiz.NotificationStrategys;
 
-public class SlackNotificationStrategy : INotificationStrategy
+public sealed class SlackNotificationStrategy : INotificationStrategy
 {
     public void SendNotification(string message)
-    {
-        Console.WriteLine($"Sending Slack: {message}");
-    }
+        => Console.WriteLine($"Sending Slack: {message}");
 }

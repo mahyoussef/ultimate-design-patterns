@@ -1,4 +1,4 @@
-namespace dotnet.Strategy.Quiz.Interfaces;
+namespace Strategy.Quiz.Interfaces;
 
 public interface INotificationStrategy
 {

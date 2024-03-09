@@ -1,4 +1,4 @@
-namespace dotnet.Observer.Enum;
+namespace Observer.Enum;
 
 public enum EventType
 {

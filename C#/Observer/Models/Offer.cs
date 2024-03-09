@@ -1,6 +1,6 @@
-namespace dotnet.Observer.Models;
+namespace Observer.Models;
 
-public class Offer
+public sealed class Offer
 {
     public string Message { get; set; } = string.Empty;
 }

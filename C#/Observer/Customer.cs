@@ -1,13 +1,11 @@
-using dotnet.Observer.Interfaces;
+using Observer.Interfaces;
 
-namespace dotnet.Observer;
+namespace Observer;
 
-public class Customer : ISubscriber
+public sealed class Customer : ISubscriber
 {
     public string Name { get; set; } = string.Empty;
-    
+
     public void Notify(string message)
-    {
-        Console.WriteLine($"Customer {Name} received the message: {message}");
-    }
+        => Console.WriteLine($"Customer {Name} sent the message: {message}");
 }

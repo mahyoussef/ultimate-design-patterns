@@ -1,7 +1,8 @@
-namespace dotnet.Observer.Models;
+namespace Observer.Models;
 
-public class Job
+public sealed class Job
 {
     public string Title { get; set; } = string.Empty;
+    
     public decimal Salary { get; set; }
 }

@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Visitor;
 
-namespace dotnet.Visitor
+/// <summary>
+/// The <see cref="IScheduleManagement"/> interface declares an `Accept` method that should take the
+/// base <see cref="IScheduleManagementVisitor"/> interface as an argument.
+/// </summary>
+public interface IScheduleManagement
 {
-    public interface IScheduleManagement
-    {
-        void GenerateReport();
-        void CalculateOverTime();
-        void Accept(IScheduleManagementVisitor scheduleManagementVisitor);
-    }
+    void GenerateReport();
+    void CalculateOverTime();
+    void Accept(IScheduleManagementVisitor scheduleManagementVisitor);
 }

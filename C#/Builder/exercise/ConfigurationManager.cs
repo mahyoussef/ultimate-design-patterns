@@ -9,10 +9,10 @@
 
         private ConfigurationManager(ConfigurationBuilder builder)
         {
-            this.graphicsQuality = builder.GraphicsQuality;
-            this.enableSound = builder.EnableSound;
-            this.controlScheme = builder.ControlScheme;
-            this.enableNotifications = builder.EnableNotifications;
+            graphicsQuality = builder.GraphicsQuality;
+            enableSound = builder.EnableSound;
+            controlScheme = builder.ControlScheme;
+            enableNotifications = builder.EnableNotifications;
         }
 
         public int GraphicsQuality => graphicsQuality;
@@ -33,25 +33,25 @@
 
             public ConfigurationBuilder SetGraphicsQuality(int graphicsQuality)
             {
-                this.GraphicsQuality = graphicsQuality;
+                GraphicsQuality = graphicsQuality;
                 return this;
             }
 
             public ConfigurationBuilder SetEnableSound(bool enableSound)
             {
-                this.EnableSound = enableSound;
+                EnableSound = enableSound;
                 return this;
             }
 
             public ConfigurationBuilder SetControlScheme(string controlScheme)
             {
-                this.ControlScheme = controlScheme;
+                ControlScheme = controlScheme;
                 return this;
             }
 
             public ConfigurationBuilder SetEnableNotifications(bool enableNotifications)
             {
-                this.EnableNotifications = enableNotifications;
+                EnableNotifications = enableNotifications;
                 return this;
             }
 

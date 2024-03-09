@@ -4,23 +4,18 @@ namespace Builder
 {
     public class EmailNotification
     {
-        private readonly string content;
-        private readonly string timestamp;
-        private readonly string sender;
-        private readonly string recipient;
-
         private EmailNotification(EmailNotificationBuilder emailNotificationBuilder)
         {
-            this.content = emailNotificationBuilder.Content;
-            this.sender = emailNotificationBuilder.Sender;
-            this.timestamp = emailNotificationBuilder.Timestamp;
-            this.recipient = emailNotificationBuilder.Recipient;
+            Content = emailNotificationBuilder.Content;
+            Sender = emailNotificationBuilder.Sender;
+            Timestamp = emailNotificationBuilder.Timestamp;
+            Recipient = emailNotificationBuilder.Recipient;
         }
 
-        public string Content => content;
-        public string Timestamp => timestamp;
-        public string Sender => sender;
-        public string Recipient => recipient;
+        public string Content { get; }
+        public string Timestamp { get; }
+        public string Sender { get; }
+        public string Recipient { get; }
 
         public interface NotificationBuilder
         {
@@ -39,25 +34,25 @@ namespace Builder
 
             public EmailNotificationBuilder SetContent(string content)
             {
-                this.Content = content;
+                Content = content;
                 return this;
             }
 
             public EmailNotificationBuilder SetSender(string sender)
             {
-                this.Sender = sender;
+                Sender = sender;
                 return this;
             }
 
             public EmailNotificationBuilder SetRecipient(string recipient)
             {
-                this.Recipient = recipient;
+                Recipient = recipient;
                 return this;
             }
 
             public EmailNotificationBuilder SetTimestamp(string timestamp)
             {
-                this.Timestamp = timestamp;
+                Timestamp = timestamp;
                 return this;
             }
 

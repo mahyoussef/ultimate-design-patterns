@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template", "Template\Template.csproj", "{16963180-5341-40EE-8881-281C500E3805}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{4F68AAAE-96C5-4B52-8C6A-E091CE4EF391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{4F68AAAE-96C5-4B52-8C6A-E091CE4EF391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{6F79A30D-9A9F-49A0-99E3-1917B5F6EDC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4F68AAAE-96C5-4B52-8C6A-E091CE4EF391}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F68AAAE-96C5-4B52-8C6A-E091CE4EF391}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F68AAAE-96C5-4B52-8C6A-E091CE4EF391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F79A30D-9A9F-49A0-99E3-1917B5F6EDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F79A30D-9A9F-49A0-99E3-1917B5F6EDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F79A30D-9A9F-49A0-99E3-1917B5F6EDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F79A30D-9A9F-49A0-99E3-1917B5F6EDC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

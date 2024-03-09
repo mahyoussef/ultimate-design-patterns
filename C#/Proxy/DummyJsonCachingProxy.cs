@@ -1,5 +1,8 @@
 ﻿namespace Proxy;
 
+/// <summary>
+/// The Proxy has an interface identical to the <see cref="DummyThirdPartyApiService"/>.
+/// </summary>
 public sealed class DummyJsonCachingProxy : IDummyJsonApi
 {
     private readonly IDummyJsonApi _service;
@@ -13,6 +16,13 @@ public sealed class DummyJsonCachingProxy : IDummyJsonApi
         _cachingLayer = [];
     }
 
+    /// <summary>
+    /// The most common applications of the Proxy pattern are lazy loading,
+    /// caching, controlling the access, logging, etc. A Proxy can perform
+    /// one of these things and then, depending on the result, pass the
+    /// execution to the same method in a linked implemented <see cref="IDummyJsonApi"/> object.
+    /// </summary>
+    /// <returns></returns>
     public string GetAllProducts()
     {
         if (_cachingLayer.TryGetValue(PRODUCTS_ENDPOINT, out string? cachedResult))

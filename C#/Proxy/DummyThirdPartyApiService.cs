@@ -1,5 +1,11 @@
 ﻿namespace Proxy;
 
+/// <summary>
+/// The <see cref="DummyThirdPartyApiService"/> contains some core business logic. Usually,
+/// the classes are capable of doing some useful work which may also be very slow or
+/// sensitive - e.g. correcting input data. A Proxy can solve these issues
+/// without any changes to the <see cref="DummyThirdPartyApiService"/>'s code.
+/// </summary>
 public sealed class DummyThirdPartyApiService : IDummyJsonApi
 {
     private static readonly HttpClient HttpClient = new();

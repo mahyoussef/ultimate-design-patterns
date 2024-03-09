@@ -1,18 +1,14 @@
-using dotnet.Strategy.Quiz.Interfaces;
+using Strategy.Quiz.Interfaces;
 
-namespace dotnet.Strategy.Quiz;
+namespace Strategy.Quiz;
 
-public class Notification
+public sealed class Notification
 {
     private readonly INotificationStrategy _notificationStrategy;
-    
+
     public Notification(INotificationStrategy notificationStrategy)
-    {
-        _notificationStrategy = notificationStrategy;
-    }
-    
+        => _notificationStrategy = notificationStrategy;
+
     public void SendNotification(string message)
-    {
-        _notificationStrategy.SendNotification(message);
-    }
+        => _notificationStrategy.SendNotification(message);
 }

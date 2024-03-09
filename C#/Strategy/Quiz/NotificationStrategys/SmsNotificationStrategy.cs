@@ -1,11 +1,9 @@
-using dotnet.Strategy.Quiz.Interfaces;
+using Strategy.Quiz.Interfaces;
 
-namespace dotnet.Strategy.Quiz.NotificationStrategys;
+namespace Strategy.Quiz.NotificationStrategys;
 
-public class SmsNotificationStrategy : INotificationStrategy
+public sealed class SmsNotificationStrategy : INotificationStrategy
 {
     public void SendNotification(string message)
-    {
-        Console.WriteLine($"Sending SMS: {message}");
-    }
+        => Console.WriteLine($"Sending SMS: {message}");
 }

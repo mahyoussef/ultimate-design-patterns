@@ -1,0 +1,1 @@
+enum EventType { newsletter, blogPost }

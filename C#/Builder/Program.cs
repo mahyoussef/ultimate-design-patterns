@@ -2,6 +2,12 @@
 
 using Builder;
 
+ProductService service = new();
+
+Console.WriteLine($"Producst with ID 1: {service.GetProducts()}");
+
+Console.WriteLine();
+
 MessengerNotificationBuilder builder = new();
 
 builder.SetContent("Hello!")

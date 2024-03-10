@@ -1,18 +1,10 @@
-namespace Solid
+namespace SOLID;
+
+public class Order
 {
-    public class Order
-    {
-        protected string Name { get; set; }
-        protected double Price { get; set; }
+    protected string? _name;
+    protected double _price;
 
-        public string GetName()
-        {
-            return Name;
-        }
-
-        public double GetPrice()
-        {
-            return Price;
-        }
-    }
+    public string? Name { get => _name; set => _name = value; }
+    public double Price { get => _price; set => _price = value; }
 }

@@ -1,21 +1,19 @@
-using System;
+namespace SOLID;
 
-namespace Solid
+public sealed class PaymentProcessor
 {
-    public class PaymentProcessor
+    private readonly IPaymentStrategy _paymentStrategy;
+
+    public PaymentProcessor(IPaymentStrategy paymentStrategy)
     {
-        private readonly PaymentStrategy paymentStrategy;
+        ArgumentNullException.ThrowIfNull(paymentStrategy, nameof(paymentStrategy));
+        _paymentStrategy = paymentStrategy;
+    }
 
-        public PaymentProcessor(PaymentStrategy paymentStrategy)
-        {
-            this.paymentStrategy = paymentStrategy ?? throw new ArgumentNullException(nameof(paymentStrategy));
-        }
-
-        public void ProcessPayment(Order order)
-        {
-            Console.WriteLine($"Processing payment of order: {order.GetName()}");
-            Console.WriteLine($"Issuing payment for amount: {order.GetPrice()}");
-            paymentStrategy.ProcessPayment(order.GetPrice());
-        }
+    public void ProcessPayment(Order order)
+    {
+        Console.WriteLine($"Processing payment of order: {order.Name}");
+        Console.WriteLine($"Issuing payment for amount: {order.Price}");
+        _paymentStrategy.ProcessPayment(order.Price);
     }
 }

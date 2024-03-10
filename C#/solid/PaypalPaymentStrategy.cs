@@ -1,12 +1,7 @@
-using System;
+namespace SOLID;
 
-namespace Solid
+public sealed class PaypalPaymentStrategy : IPaymentStrategy
 {
-    public class PaypalPaymentStrategy : PaymentStrategy
-    {
-        public void ProcessPayment(double amount)
-        {
-            Console.WriteLine("Processing PayPal payments...");
-        }
-    }
+    public void ProcessPayment(double amount)
+        => Console.WriteLine("Processing PayPal payments...");
 }

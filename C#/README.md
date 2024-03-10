@@ -26,3 +26,10 @@ All projects can be run in either of two ways:
 2. Using the .NET CLI
     - Open a terminal in the project directory.
     - Run the command `dotnet run` to run the project.
+
+
+## Contributing
+
+Your code should follow the conventions and recommended practices in C#.
+
+Any new design pattern should be added in a new directory, with the entry point being `Program.cs`.

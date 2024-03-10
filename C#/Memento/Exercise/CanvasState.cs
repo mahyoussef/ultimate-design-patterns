@@ -1,26 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Memento.Exercise;
 
-namespace dotnet.Memento.Exercise
+public sealed class CanvasState
 {
-    public class CanvasState
+    public string Content { get; set; }
+    public string Color { get; set; }
+    public string Border { get; set; }
+
+    public CanvasState(string content, string color, string border)
     {
-    
-
-        public string content { get; set; }
-        public string color { get; set; }
-        public string border { get; set; }
-
-        public CanvasState(string content, string color, string border)
-        {
-            this.content = content;
-            this.color = color;
-            this.border = border;
-        }
-
-     
+        Content = content;
+        Color = color;
+        Border = border;
     }
 }

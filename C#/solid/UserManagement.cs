@@ -1,8 +1,7 @@
-namespace Solid
+namespace SOLID;
+
+public interface IUserManagement
 {
-    public interface UserManagement
-    {
-        void UpdateUserProfile(Customer customer);
-        void ChangePassword(Customer customer, string newPassword);
-    }
+    void UpdateUserProfile(Customer customer);
+    void ChangePassword(Customer customer, string newPassword);
 }

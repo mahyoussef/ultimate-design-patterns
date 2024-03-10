@@ -1,30 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Memento;
 
-namespace dotnet.Memento
+/// <summary>
+/// Text editor that can save and restore its state.
+/// </summary>
+public sealed class TextEditor
 {
-    public class TextEditor
-    {
-        public string content { get; set; }
+    public string Content { get; set; }
 
-        public TextEditor()
-        {
-            content = "";
-        }
+    public TextEditor()
+        => Content = string.Empty;
 
-        public TextEditorState Save()
-        {
-            return new TextEditorState(content);
-        }
+    public TextEditorState Save()
+        => new(Content);
 
-        public void Restore(TextEditorState textEditorState)
-        {
-            content = textEditorState.content;
-
-        }
-
-    }
+    public void Restore(TextEditorState textEditorState)
+        => Content = textEditorState.Content;
 }

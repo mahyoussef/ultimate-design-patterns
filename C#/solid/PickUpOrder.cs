@@ -1,6 +1,3 @@
-namespace Solid
-{
-    public class PickUpOrder : Order
-    {
-    }
-}
+namespace SOLID;
+
+public sealed class PickUpOrder : Order;

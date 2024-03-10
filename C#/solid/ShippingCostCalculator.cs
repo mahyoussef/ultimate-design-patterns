@@ -1,7 +1,6 @@
-namespace Solid
+namespace SOLID;
+
+public interface IShippingCostCalculator
 {
-    public interface ShippingCostCalculator
-    {
-        double CalculateShippingCost();
-    }
+    double CalculateShippingCost();
 }

@@ -1,70 +1,60 @@
-﻿using System;
+﻿namespace Builder;
 
-namespace Builder
+public sealed class EmailNotification
 {
-    public class EmailNotification
+    private EmailNotification(EmailNotificationBuilder emailNotificationBuilder)
     {
-        private readonly string content;
-        private readonly string timestamp;
-        private readonly string sender;
-        private readonly string recipient;
+        Content = emailNotificationBuilder.Content;
+        Sender = emailNotificationBuilder.Sender;
+        Timestamp = emailNotificationBuilder.Timestamp;
+        Recipient = emailNotificationBuilder.Recipient;
+    }
 
-        private EmailNotification(EmailNotificationBuilder emailNotificationBuilder)
+    public string? Content { get; }
+    public string? Timestamp { get; }
+    public string? Sender { get; }
+    public string? Recipient { get; }
+
+    public interface NotificationBuilder
+    {
+        EmailNotificationBuilder SetContent(string content);
+        EmailNotificationBuilder SetSender(string sender);
+        EmailNotificationBuilder SetRecipient(string recipient);
+        EmailNotificationBuilder SetTimestamp(string timestamp);
+    }
+
+    public sealed class EmailNotificationBuilder : NotificationBuilder
+    {
+        public string? Content { get; private set; }
+        public string? Timestamp { get; private set; }
+        public string? Sender { get; private set; }
+        public string? Recipient { get; private set; }
+
+        public EmailNotificationBuilder SetContent(string content)
         {
-            this.content = emailNotificationBuilder.Content;
-            this.sender = emailNotificationBuilder.Sender;
-            this.timestamp = emailNotificationBuilder.Timestamp;
-            this.recipient = emailNotificationBuilder.Recipient;
+            Content = content;
+            return this;
         }
 
-        public string Content => content;
-        public string Timestamp => timestamp;
-        public string Sender => sender;
-        public string Recipient => recipient;
-
-        public interface NotificationBuilder
+        public EmailNotificationBuilder SetSender(string sender)
         {
-            EmailNotificationBuilder SetContent(string content);
-            EmailNotificationBuilder SetSender(string sender);
-            EmailNotificationBuilder SetRecipient(string recipient);
-            EmailNotificationBuilder SetTimestamp(string timestamp);
+            Sender = sender;
+            return this;
         }
 
-        public class EmailNotificationBuilder : NotificationBuilder
+        public EmailNotificationBuilder SetRecipient(string recipient)
         {
-            public string Content { get; private set; }
-            public string Timestamp { get; private set; }
-            public string Sender { get; private set; }
-            public string Recipient { get; private set; }
-
-            public EmailNotificationBuilder SetContent(string content)
-            {
-                this.Content = content;
-                return this;
-            }
-
-            public EmailNotificationBuilder SetSender(string sender)
-            {
-                this.Sender = sender;
-                return this;
-            }
-
-            public EmailNotificationBuilder SetRecipient(string recipient)
-            {
-                this.Recipient = recipient;
-                return this;
-            }
-
-            public EmailNotificationBuilder SetTimestamp(string timestamp)
-            {
-                this.Timestamp = timestamp;
-                return this;
-            }
-
-            public EmailNotification Build()
-            {
-                return new EmailNotification(this);
-            }
+            Recipient = recipient;
+            return this;
         }
+
+        public EmailNotificationBuilder SetTimestamp(string timestamp)
+        {
+            Timestamp = timestamp;
+            return this;
+        }
+
+        public EmailNotification Build()
+            => new(this);
     }
 }

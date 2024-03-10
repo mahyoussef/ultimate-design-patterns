@@ -1,12 +1,7 @@
-using System;
+namespace SOLID;
 
-namespace Solid
+public sealed class OrderManagement
 {
-    public class OrderManagement
-    {
-        public void ProcessOrder(Order order)
-        {
-            Console.WriteLine($"Processing order: {order.GetName()} now...");
-        }
-    }
+    public void ProcessOrder(Order order)
+        => Console.WriteLine($"Processing order: {order.Name} now...");
 }

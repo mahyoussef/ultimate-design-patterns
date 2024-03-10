@@ -1,20 +1,10 @@
-using System;
+namespace SOLID;
 
-namespace Solid
+public sealed class Subscriber : ISubscriptionNotificationService
 {
-    public class Subscriber : SubscriptionNotificationService
-    {
-        private string email;
+    public void SubscribeToNewProductsAvailability()
+        => Console.WriteLine("Subscribing to new products availability...");
 
-        public void SubscribeToNewProductsAvailability()
-        {
-            Console.WriteLine("Subscribing to new products availability...");
-        }
-
-        public void SubscribeToSMSNotifications()
-        {
-            Console.WriteLine("Subscribing to SMS notifications...");
-        }
-    }
-
+    public void SubscribeToSMSNotifications()
+        => Console.WriteLine("Subscribing to SMS notifications...");
 }

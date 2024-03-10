@@ -1,6 +1,10 @@
-namespace dotnet.Observer.Interfaces;
+namespace Observer.Interfaces;
 
 public interface ISubscriber
 {
-    public void Notify(string message);
+    /// <summary>
+    /// Notify all subscribers with a message
+    /// </summary>
+    /// <param name="message">Message to be sent to subscribers</param>
+    void Notify(string message);
 }

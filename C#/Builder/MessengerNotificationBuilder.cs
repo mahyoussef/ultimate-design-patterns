@@ -1,62 +1,50 @@
-﻿using System.Collections.Generic;
+﻿namespace Builder;
 
-namespace Builder
+public sealed class MessengerNotificationBuilder : INotificationBuilder
 {
-    public class MessengerNotificationBuilder : NotificationBuilder
+    public string? Content { get; private set; }
+    public string? Sender { get; private set; }
+    public string? Recipient { get; private set; }
+    public string? Timestamp { get; private set; }
+    public List<string>? Attachments { get; private set; }
+    public string? Theme { get; private set; }
+
+    public MessengerNotification Build()
+        => new(this);
+
+    public INotificationBuilder SetContent(string content)
     {
-        private string content;
-        private string sender;
-        private string recipient;
-        private string timestamp;
-        private List<string> attachments;
-        private string theme;
+        Content = content;
+        return this;
+    }
 
-        public MessengerNotificationBuilder SetAttachments(List<string> attachments)
-        {
-            this.attachments = attachments;
-            return this;
-        }
+    public INotificationBuilder SetSender(string sender)
+    {
+        Sender = sender;
+        return this;
+    }
 
-        public MessengerNotificationBuilder SetTheme(string theme)
-        {
-            this.theme = theme;
-            return this;
-        }
+    public INotificationBuilder SetRecipient(string recipient)
+    {
+        Recipient = recipient;
+        return this;
+    }
 
-        public override MessengerNotificationBuilder SetContent(string content)
-        {
-            this.content = content;
-            return this;
-        }
+    public INotificationBuilder SetTimestamp(string timestamp)
+    {
+        Timestamp = timestamp;
+        return this;
+    }
 
-        public override MessengerNotificationBuilder SetSender(string sender)
-        {
-            this.sender = sender;
-            return this;
-        }
+    public INotificationBuilder SetAttachments(List<string> attachments)
+    {
+        Attachments = attachments;
+        return this;
+    }
 
-        public override MessengerNotificationBuilder SetRecipient(string recipient)
-        {
-            this.recipient = recipient;
-            return this;
-        }
-
-        public override MessengerNotificationBuilder SetTimestamp(string timestamp)
-        {
-            this.timestamp = timestamp;
-            return this;
-        }
-
-        internal string GetContent() => content;
-        internal string GetSender() => sender;
-        internal string GetRecipient() => recipient;
-        internal string GetTimestamp() => timestamp;
-        internal List<string> GetAttachments() => attachments;
-        internal string GetTheme() => theme;
-
-        public MessengerNotification Build()
-        {
-            return new MessengerNotification(this);
-        }
+    public INotificationBuilder SetTheme(string theme)
+    {
+        Theme = theme;
+        return this;
     }
 }

@@ -1,4 +1,4 @@
-namespace dotnet.Observer.Quiz.Interfaces;
+namespace Observer.Quiz.Interfaces;
 
 public interface ISubscriber
 {

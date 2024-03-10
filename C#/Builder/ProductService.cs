@@ -1,23 +1,43 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Builder
+namespace Builder;
+
+public sealed class ProductService
 {
-    public class ProductService
+    /// <summary>
+    /// More commonly used in ASP.NET applications
+    /// </summary>
+    /// <returns></returns>
+    private IHttpClientBuilder CreateBuilder()
     {
-        public async Task<HttpResponseMessage> GetProducts()
-        {
-            var uri = new Uri("https://dummyjson.com/products/1");
-            var request = new HttpRequestMessage(HttpMethod.Get, uri);
-            request.Headers.Add("key1", "value1");
-            request.Headers.Add("key2", "value2");
-            request.Timeout = TimeSpan.FromSeconds(10);
+        ServiceCollection services = new();
 
-            using (var httpClient = new HttpClient())
+        // Can Chain other calls for further configuration
+        IHttpClientBuilder x = services.AddHttpClient<ProductService>("product")
+            .ConfigureHttpClient(client =>
             {
-                return await httpClient.SendAsync(request);
-            }
-        }
+                client.BaseAddress = new Uri("https://dummyjson.com/");
+                client.DefaultRequestHeaders.Add("Accept", "application/json");
+                client.Timeout = TimeSpan.FromSeconds(10);
+            });
+
+        return x;
+    }
+
+    public string GetProducts()
+    {
+        IHttpClientBuilder builder = CreateBuilder();
+
+        IHttpClientFactory clientFactory = builder.Services.BuildServiceProvider()
+            .GetRequiredService<IHttpClientFactory>();
+            
+        HttpClient client = clientFactory.CreateClient("product");
+        
+        // Usage of Result is not recommended in production code
+        // This is just for demonstration purposes
+        // use async/await instead
+        var response = client.GetAsync("products/1").Result;
+        var products = response.Content.ReadAsStringAsync().Result;
+        return products;
     }
 }

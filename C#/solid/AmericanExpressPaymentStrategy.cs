@@ -1,13 +1,7 @@
-using System;
+namespace SOLID;
 
-namespace Solid
+public sealed class AmericanExpressPaymentStrategy : IPaymentStrategy
 {
-    public class AmericanExpressPaymentStrategy : PaymentStrategy
-    {
-        public void ProcessPayment(double amount)
-        {
-            Console.WriteLine("Processing American Express card payments...");
-        }
-    }
-
+    public void ProcessPayment(double amount)
+        => Console.WriteLine("Processing American Express card payments...");
 }

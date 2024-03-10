@@ -1,76 +1,43 @@
-﻿namespace Builder
+﻿namespace Builder;
+
+public sealed class SlackNotificationBuilder
 {
-    public class SlackNotification
+    public string? Content { get; private set; }
+    public string? Sender{ get; private set; }
+    public string? Recipient { get; private set; }
+    public string? Timestamp { get; private set; }
+    public bool HasMarkdownLanguage { get; private set; }
+
+    public SlackNotificationBuilder SetContent(string content)
     {
-        private string content;
-        private string sender;
-        private string recipient;
-        private string timestamp;
-        private bool hasMarkdownLanguage;
-
-        internal SlackNotification(SlackNotificationBuilder slackNotificationBuilder)
-        {
-            this.content = slackNotificationBuilder.GetContent();
-            this.sender = slackNotificationBuilder.GetSender();
-            this.recipient = slackNotificationBuilder.GetRecipient();
-            this.timestamp = slackNotificationBuilder.GetTimestamp();
-            this.hasMarkdownLanguage = slackNotificationBuilder.IsHasMarkdownLanguage();
-        }
-
-        public string Content => content;
-        public string Sender => sender;
-        public string Recipient => recipient;
-        public string Timestamp => timestamp;
-        public bool HasMarkdownLanguage => hasMarkdownLanguage;
+        Content = content;
+        return this;
     }
 
-    public class SlackNotificationBuilder : NotificationBuilder
+    public SlackNotificationBuilder SetSender(string sender)
     {
-        private string content;
-        private string sender;
-        private string recipient;
-        private string timestamp;
-        private bool hasMarkdownLanguage;
-
-        public SlackNotificationBuilder SetContent(string content)
-        {
-            this.content = content;
-            return this;
-        }
-
-        public SlackNotificationBuilder SetSender(string sender)
-        {
-            this.sender = sender;
-            return this;
-        }
-
-        public SlackNotificationBuilder SetRecipient(string recipient)
-        {
-            this.recipient = recipient;
-            return this;
-        }
-
-        public SlackNotificationBuilder SetTimestamp(string timestamp)
-        {
-            this.timestamp = timestamp;
-            return this;
-        }
-
-        public SlackNotificationBuilder SetMarkdownLanguage(bool hasMarkdownLanguage)
-        {
-            this.hasMarkdownLanguage = hasMarkdownLanguage;
-            return this;
-        }
-
-        internal string GetContent() => content;
-        internal string GetSender() => sender;
-        internal string GetRecipient() => recipient;
-        internal string GetTimestamp() => timestamp;
-        internal bool IsHasMarkdownLanguage() => hasMarkdownLanguage;
-
-        public SlackNotification Build()
-        {
-            return new SlackNotification(this);
-        }
+        Sender = sender;
+        return this;
     }
+
+    public SlackNotificationBuilder SetRecipient(string recipient)
+    {
+        Recipient = recipient;
+        return this;
+    }
+
+    public SlackNotificationBuilder SetTimestamp(string timestamp)
+    {
+        Timestamp = timestamp;
+        return this;
+    }
+
+    public SlackNotificationBuilder SetHasMarkdownLanguage(bool hasMarkdownLanguage)
+    {
+        HasMarkdownLanguage = hasMarkdownLanguage;
+        return this;
+    }
+
+    public SlackNotification Build()
+        => new(this);
 }

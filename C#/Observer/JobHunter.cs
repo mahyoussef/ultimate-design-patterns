@@ -1,13 +1,11 @@
-using dotnet.Observer.Interfaces;
+using Observer.Interfaces;
 
-namespace dotnet.Observer;
+namespace Observer;
 
-public class JobHunter : ISubscriber
+public sealed class JobHunter : ISubscriber
 {
     public string Name { get; set; } = string.Empty;
-    
+
     public void Notify(string message)
-    {
-        Console.WriteLine($"Job Hunter {Name} received the message: {message}");
-    }
+        => Console.WriteLine($"Job Hunter {Name} sent the message: {message}");
 }

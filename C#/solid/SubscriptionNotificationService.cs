@@ -1,8 +1,7 @@
-namespace Solid
+namespace SOLID;
+
+public interface ISubscriptionNotificationService
 {
-    public interface SubscriptionNotificationService
-    {
-        void SubscribeToNewProductsAvailability();
-        void SubscribeToSMSNotifications();
-    }
+    void SubscribeToNewProductsAvailability();
+    void SubscribeToSMSNotifications();
 }

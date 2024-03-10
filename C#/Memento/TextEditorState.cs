@@ -1,20 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Memento;
 
-namespace dotnet.Memento
+public sealed class TextEditorState
 {
-    public class TextEditorState
-    {
-        public string content { get; set; }
+    public string Content { get; set; }
 
-        public TextEditorState(string content)
-        {
-            this.content = content;
-        }
-
-
-    }
+    public TextEditorState(string content)
+        => Content = content;
 }

@@ -1,7 +1,8 @@
-namespace dotnet.Observer.Models;
+namespace Observer.Models;
 
-public class Product
+public sealed class Product
 {
     public string Name { get; set; } = string.Empty;
+    
     public decimal Price { get; set; }
 }

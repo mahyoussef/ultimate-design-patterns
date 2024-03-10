@@ -1,17 +1,11 @@
-namespace Solid
+namespace SOLID;
+
+public sealed class Payment
 {
-    public class Payment
+    public string Type { get; }
+
+    public Payment(string type)
     {
-        private string type;
-
-        public Payment(string type)
-        {
-            this.type = type;
-        }
-
-        public string GetType()
-        {
-            return type;
-        }
+        Type = type;
     }
 }

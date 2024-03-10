@@ -1,24 +1,26 @@
-using dotnet.Observer.Quiz.Enum;
-using dotnet.Observer.Quiz.Interfaces;
-using dotnet.Observer.Quiz.Models;
+using Observer.Quiz.Enum;
+using Observer.Quiz.Interfaces;
+using Observer.Quiz.Models;
 
-public class NewsLetterPlace
+namespace Observer.Quiz;
+
+public sealed class NewsLetterPlace
 {
-    private Dictionary<EventType, List<ISubscriber>> _subscribers = new();
+    private readonly Dictionary<EventType, List<ISubscriber>> _subscribers = [];
     
-    private List<BlogPost> _blogPosts = new();
+    private readonly List<BlogPost> _blogPosts = [];
     
-    private List<WeeklyNewsLetter> _weeklyNewsLetters = new();
+    private readonly List<WeeklyNewsLetter> _weeklyNewsLetters = [];
     
     public void Subscribe(EventType eventType, ISubscriber subscriber)
     {
-        if (_subscribers.ContainsKey(eventType))
+        if (_subscribers.TryGetValue(eventType, out List<ISubscriber>? value))
         {
-            _subscribers[eventType].Add(subscriber);
+            value.Add(subscriber);
         }
         else
         {
-            _subscribers.Add(eventType, new List<ISubscriber> {subscriber});
+            _subscribers.Add(eventType, [subscriber]);
         }
     }
     
@@ -36,17 +38,17 @@ public class NewsLetterPlace
     
     private void NotifySubscribers(EventType eventType, string message)
     {
-        if (_subscribers.ContainsKey(eventType))
+        if (_subscribers.TryGetValue(eventType, out List<ISubscriber>? value))
         {
-            _subscribers[eventType].ForEach(subscriber => subscriber.Notify(message));
+            value.ForEach(subscriber => subscriber.Notify(message));
         }
     }
     
     public void RemoveSubscriber(EventType eventType, ISubscriber subscriber)
     {
-        if (_subscribers.ContainsKey(eventType))
+        if (_subscribers.TryGetValue(eventType, out List<ISubscriber>? value))
         {
-            _subscribers[eventType].Remove(subscriber);
+            value.Remove(subscriber);
         }
     }
 }

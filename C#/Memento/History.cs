@@ -1,32 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Memento;
 
-namespace dotnet.Memento
+/// <summary>
+/// Storage for all previous states of the text editor.
+/// </summary>
+public sealed class History
 {
-    public class History
-    {
-        private Stack<TextEditorState> prevStates;
+    private readonly Stack<TextEditorState> _prevStates;
 
-        public History()
-        {
-            prevStates = new Stack<TextEditorState>();
-        }
+    public History()
+        => _prevStates = new Stack<TextEditorState>();
 
-        public void SaveHistoryState(TextEditorState textEditorState)
-        {
-            prevStates.Push(textEditorState);
-        }
+    public void SaveHistoryState(TextEditorState textEditorState)
+        => _prevStates.Push(textEditorState);
 
-        public TextEditorState Undo()
-        {
-            if (prevStates.Count > 0)
-            {
-                return prevStates.Pop();
-            }
-            return null;
-        }
-    }
+    public TextEditorState? Undo()
+        => _prevStates.Count > 0 ? _prevStates.Pop() : null;
 }

@@ -1,25 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Visitor;
 
-namespace dotnet.Visitor
+public sealed class NightShiftScheduleManagement : IScheduleManagement
 {
-    public class NightShiftScheduleManagement : IScheduleManagement
-    {
-        public void GenerateReport()
-        {
-            Console.WriteLine("Generating report for night shift...");
-        }
-        public void CalculateOverTime()
-        {
-            Console.WriteLine("Calculating over time for night shift..");
-        }
+    public void GenerateReport()
+        => Console.WriteLine("Generating report for night shift...");
 
-        public void Accept(IScheduleManagementVisitor scheduleManagementVisitor)
-        {
-            scheduleManagementVisitor.Visit(this);
-        }
-    }
+    public void CalculateOverTime()
+        => Console.WriteLine("Calculating over time for night shift..");
+
+    public void Accept(IScheduleManagementVisitor scheduleManagementVisitor)
+        => scheduleManagementVisitor.Visit(this);
 }

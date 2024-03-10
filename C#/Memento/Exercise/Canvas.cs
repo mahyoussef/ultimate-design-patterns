@@ -1,40 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Memento.Exercise;
 
-namespace dotnet.Memento.Exercise
+public sealed class Canvas
 {
-    public class Canvas
+    public string Content { get; set; }
+    public string Color { get; set; }
+    public string Border { get; set; }
+
+    public Canvas()
     {
-       
+        Content = string.Empty;
+        Color = string.Empty;
+        Border = string.Empty;
+    }
 
-        public string content { get; set; }
-        public string color { get; set; }
-        public string border { get; set; }
+    public CanvasState Save()
+        => new(Content, Color, Border);
 
-        public Canvas()
-        {
-            this.content = "";
-            this.color = "";
-            this.border = "";
-        }
-
-        public CanvasState Save()
-        {
-            return new CanvasState(content, color, border);
-        }
-
-        public void Restore(CanvasState canvasState)
-        {
-            content = canvasState.content;
-            color = canvasState.color;
-            border = canvasState.border;
-        }
-
-        
-
-       
+    public void Restore(CanvasState canvasState)
+    {
+        Content = canvasState.Content;
+        Color = canvasState.Color;
+        Border = canvasState.Border;
     }
 }

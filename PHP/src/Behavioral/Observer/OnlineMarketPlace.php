@@ -77,6 +77,11 @@ class OnlineMarketPlace
 
     }
 
+    public function addNewJobOpening(string $jobOpeningMessage): void
+    {
+        $this->notifySubscribers(EventType::OPEN_POSITION, "New Opening Position is available" . $jobOpeningMessage);
+    }
+
     /**
      * @param EventType $eventType
      * @param string $message

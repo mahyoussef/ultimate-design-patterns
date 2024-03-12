@@ -1,0 +1,19 @@
+{
+  "name": "a.helmy/design-patterns",
+  "autoload": {
+    "psr-4": {
+      "DesignPatterns\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "ahmed helmy",
+      "email": "helmyahmed248@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.2.0",
+    "phpmd/phpmd": "^2.6.0"
+  },
+  "require": {}
+}

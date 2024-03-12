@@ -7,6 +7,7 @@ void main() {
   Subscriber ahmed = Customer(name: "Ahmed");
   Subscriber mahmoud = Customer(name: "Mahmoud");
   Subscriber youssef = Customer(name: "Youssef");
+  // ignore: unused_local_variable
   Subscriber mostafa = Customer(name: "Mostafa");
 
   onlineMarketPlace.subscribe(ahmed, EventType.newProduct);

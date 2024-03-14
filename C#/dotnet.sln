@@ -32,6 +32,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{C205F547-632D-4C46-B663-C9173437326E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediator.csproj", "{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,10 @@ Global
 		{C205F547-632D-4C46-B663-C9173437326E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C205F547-632D-4C46-B663-C9173437326E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C205F547-632D-4C46-B663-C9173437326E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

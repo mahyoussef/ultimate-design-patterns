@@ -2,7 +2,7 @@ import { LegacyWeatherService } from "./legacy-weather-service";
 import { TemperatureDate } from "./temperature-date";
 import { WeatherServiceAdapter } from "./weather-service-adapter";
 
-class WeatherServiceAdaptee implements WeatherServiceAdapter {
+export class WeatherServiceAdaptee implements WeatherServiceAdapter {
   private readonly legacyWeatherService: LegacyWeatherService;
 
   constructor(legacyWeatherService: LegacyWeatherService) {

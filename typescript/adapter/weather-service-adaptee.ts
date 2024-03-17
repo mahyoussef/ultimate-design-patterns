@@ -1,5 +1,5 @@
 import { LegacyWeatherService } from "./legacy-weather-service";
-import { TemperatureDate } from "./temperature-date";
+import { TemperatureData } from "./temperature-data";
 import { WeatherServiceAdapter } from "./weather-service-adapter";
 
 export class WeatherServiceAdaptee implements WeatherServiceAdapter {
@@ -9,7 +9,7 @@ export class WeatherServiceAdaptee implements WeatherServiceAdapter {
     this.legacyWeatherService = legacyWeatherService;
   }
 
-  getTemperature(longitude: number, latitude: number): TemperatureDate {
+  getTemperature(longitude: number, latitude: number): TemperatureData {
     const temperatureDataInXML = this.legacyWeatherService.getTemperature(
       this.getCityOf(longitude, latitude),
       this.getCountryOf(longitude, latitude)
@@ -17,9 +17,9 @@ export class WeatherServiceAdaptee implements WeatherServiceAdapter {
     return this.convertXMLDataToJson(temperatureDataInXML);
   }
 
-  private convertXMLDataToJson(xmlData: string): TemperatureDate {
+  private convertXMLDataToJson(xmlData: string): TemperatureData {
     console.log("Converting...");
-    return new TemperatureDate("Converted Data from XML into JSON");
+    return new TemperatureData("Converted Data from XML into JSON");
   }
 
   private getCityOf(longitude: number, latitude: number): string {

@@ -24,7 +24,7 @@ class WeatherServiceAdaptee implements WeatherServiceAdapter {
     this.legacyWeatherService = legacyWeatherService;
   }
 
-  getTemperature(longitude: number, latitude: number): TemperatureDate {
+  getTemperature(longitude: number, latitude: number): TemperatureData {
     const temperatureDataInXML = this.legacyWeatherService.getTemperature(
       this.getCityOf(longitude, latitude),
       this.getCountryOf(longitude, latitude)
@@ -32,9 +32,9 @@ class WeatherServiceAdaptee implements WeatherServiceAdapter {
     return this.convertXMLDataToJson(temperatureDataInXML);
   }
 
-  private convertXMLDataToJson(xmlData: string): TemperatureDate {
+  private convertXMLDataToJson(xmlData: string): TemperatureData {
     console.log("Converting...");
-    return new TemperatureDate("Converted Data from XML into JSON");
+    return new TemperatureData("Converted Data from XML into JSON");
   }
 
   private getCityOf(longitude: number, latitude: number): string {
@@ -53,18 +53,18 @@ class WeatherServiceAdaptee implements WeatherServiceAdapter {
 }
 
 interface WeatherServiceAdapter {
-  getTemperature(longitude: number, latitude: number): TemperatureDate;
+  getTemperature(longitude: number, latitude: number): TemperatureData;
 }
 
-class TemperatureDate {
-  private readonly temperatureDate: string;
+class TemperatureData {
+  private readonly temperatureData: string;
 
-  constructor(temperatureDate: string) {
-    this.temperatureDate = temperatureDate;
+  constructor(temperatureData: string) {
+    this.temperatureData = temperatureData;
   }
 
-  getTemperatureDate(): string {
-    return this.temperatureDate;
+  getTemperatureData(): string {
+    return this.temperatureData;
   }
 }
 

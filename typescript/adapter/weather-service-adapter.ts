@@ -1,5 +1,5 @@
-import { TemperatureDate } from "./temperature-date";
+import { TemperatureData } from "./temperature-data";
 
 export interface WeatherServiceAdapter {
-  getTemperature(longitude: number, latitude: number): TemperatureDate;
+  getTemperature(longitude: number, latitude: number): TemperatureData;
 }

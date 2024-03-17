@@ -8,15 +8,15 @@ public class WeatherServiceAdaptee implements WeatherServiceAdapter {
         this.legacyWeatherService = legacyWeatherService;
     }
 
-    public TemperatureDate getTemperature(double longitude, double latitude) {
+    public TemperatureData getTemperature(double longitude, double latitude) {
         String temperatureDataInXML = legacyWeatherService.getTemperature(getCityOf(longitude, latitude),
                 getCountryOf(longitude, latitude));
         return convertXMLDataToJson(temperatureDataInXML);
     }
 
-    private TemperatureDate convertXMLDataToJson(String xmlData) {
+    private TemperatureData convertXMLDataToJson(String xmlData) {
         System.out.println("Converting...");
-        return new TemperatureDate("Converted Data from XML into JSON");
+        return new TemperatureData("Converted Data from XML into JSON");
     }
 
     private String getCityOf(double longitude, double latitude) {

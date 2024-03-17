@@ -1,4 +1,4 @@
-import { JSONReport } from "./JSON-report";
+import { JSONReport } from "./json-report";
 import { CSVReport } from "./cv-report";
 import { ReportingServiceAdapter } from "./reporting-service-adapter";
 import { ThirdPartyReportingService } from "./third-party-reporting-service";

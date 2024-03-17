@@ -1,4 +1,4 @@
-import { JSONReport } from "./JSON-report";
+import { JSONReport } from "./json-report";
 
 class DashboardService {
   generateDashboard(jsonReport: JSONReport) {

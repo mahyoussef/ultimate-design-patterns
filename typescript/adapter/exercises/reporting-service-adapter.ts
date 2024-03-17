@@ -1,4 +1,4 @@
-import { JSONReport } from "./JSON-report";
+import { JSONReport } from "./json-report";
 
 export interface ReportingServiceAdapter {
   generateReport(): JSONReport;

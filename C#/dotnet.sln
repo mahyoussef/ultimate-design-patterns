@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Comp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediator.csproj", "{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "Flyweight\Flyweight.csproj", "{98DDE3E3-CD7F-4E2B-A8B6-C112D384723D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,10 @@ Global
 		{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C426CB84-9D8F-4FD8-816B-ED69D2A93A8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98DDE3E3-CD7F-4E2B-A8B6-C112D384723D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98DDE3E3-CD7F-4E2B-A8B6-C112D384723D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98DDE3E3-CD7F-4E2B-A8B6-C112D384723D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98DDE3E3-CD7F-4E2B-A8B6-C112D384723D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

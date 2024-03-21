@@ -1,14 +1,14 @@
 package adapter;
 
-public class TemperatureDate {
+public class TemperatureData {
 
-    private final String temperatureDate;
+    private final String temperatureData;
 
-    public TemperatureDate(String temperatureDate) {
-        this.temperatureDate = temperatureDate;
+    public TemperatureData(String temperatureData) {
+        this.temperatureData = temperatureData;
     }
 
-    public String getTemperatureDate() {
-        return temperatureDate;
+    public String getTemperatureData() {
+        return temperatureData;
     }
 }

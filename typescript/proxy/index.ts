@@ -1,58 +1,52 @@
+import { DummyThirdPartyApiService } from "./dummy-3rd-party-api-service";
 import { DummyJsonCachingProxy } from "./dummy-json-caching-proxy";
-import { nativeProxy } from "./native-js-proxy";
+import { nativeJsProxy } from "./native-js-proxy";
 
 const apiProxy = new DummyJsonCachingProxy();
 
 (async function main() {
-  console.log('With api proxy:\n');
+  console.log("With api proxy:\n");
   console.log(
     "Calling for the first time.................................................................................................\n"
   );
-  let startTime = new Date().getTime();
-
-  let products = await apiProxy.getAllProducts();
-  let recipes = await apiProxy.getAllRecipes();
-  console.log(products, recipes);
-
-  console.log("completion Time: ", getCompletionTime(startTime) + "ms\n\n");
+  await logApiCall(apiProxy);
 
   console.log(
     "Calling for the second time.................................................................................................\n"
   );
-  startTime = new Date().getTime();
-
-  products = await apiProxy.getAllProducts();
-  recipes = await apiProxy.getAllRecipes();
-  console.log(products, recipes);
-
-  console.log("completion Time: ", getCompletionTime(startTime) + "ms\n\n");
-
-
+  await logApiCall(apiProxy);
 
   console.log("With native proxy:\n");
   console.log(
     "[NATIVE] Calling for the first time.................................................................................................\n"
   );
-  startTime = new Date().getTime();
-  products = await nativeProxy.getAllProducts();
-  recipes = await nativeProxy.getAllRecipes();
-  console.log(products, recipes);
-  
-  console.log("completion Time: ", getCompletionTime(startTime) + "ms\n\n");
-  
+  await logProxyCall(nativeJsProxy);
+
   console.log(
     "[NATIVE] Calling for the second time.................................................................................................\n"
   );
-  startTime = new Date().getTime();
-  products = await nativeProxy.getAllProducts();
-  recipes = await nativeProxy.getAllRecipes();
-  console.log(products, recipes);
-  
-  console.log("[NATIVE] completion Time: ", getCompletionTime(startTime) + "ms");
+  await logProxyCall(nativeJsProxy);
 })();
 
-(async function mainWithNativeProxy() {
-})();
+async function logApiCall(apiProxy: DummyJsonCachingProxy) {
+  const startTime = new Date().getTime();
+
+  const products = await apiProxy.getAllProducts();
+  const recipes = await apiProxy.getAllRecipes();
+  console.log("[NATIVE] ", products, recipes);
+
+  console.log("completion Time: ", getCompletionTime(startTime) + "ms\n\n");
+}
+
+async function logProxyCall(nativeJsProxy: DummyThirdPartyApiService) {
+  const startTime = new Date().getTime();
+
+  const products = await nativeJsProxy.getAllProducts();
+  const recipes = await nativeJsProxy.getAllRecipes();
+  console.log(products, recipes);
+
+  console.log("completion Time: ", getCompletionTime(startTime) + "ms\n\n");
+}
 
 function getCompletionTime(startTime: number) {
   return new Date().getTime() - startTime;

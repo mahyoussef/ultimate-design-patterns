@@ -1,4 +1,3 @@
-import 'package:dart_lang/structural/adapter/models.dart/temperature_data.dart';
 import 'package:dart_lang/structural/adapter/third_party_service.dart';
 
 class LegacyWeatherService {

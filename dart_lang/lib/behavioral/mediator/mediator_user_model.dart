@@ -1,5 +1,4 @@
 import 'package:dart_lang/behavioral/mediator/chat_mediator.dart';
-import 'package:dart_lang/behavioral/mediator/mediator_group_model.dart';
 
 class MediatorUserModel {
   String name;

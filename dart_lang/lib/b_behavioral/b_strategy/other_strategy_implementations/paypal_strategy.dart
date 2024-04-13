@@ -1,4 +1,4 @@
-import 'package:dart_lang/b_behavioral/strategy/payment_strategy.dart';
+import 'package:dart_lang/b_behavioral/b_strategy/other_strategy_implementations/payment_strategy.dart';
 
 class PayPal implements PaymentStrategy {
   @override

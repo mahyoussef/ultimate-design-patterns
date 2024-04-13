@@ -1,6 +1,6 @@
-// import  'package:Strategy_design/behavioral/command/models/door_model.dart';
-// import  'package:Strategy_design/behavioral/command/models/light_model.dart';
-// import  'package:Strategy_design/behavioral/command/models/tv_model.dart';
+// import  'package:dart_lang/behavioral/command/models/door_model.dart';
+// import  'package:dart_lang/behavioral/command/models/light_model.dart';
+// import  'package:dart_lang/behavioral/command/models/tv_model.dart';
 
 // abstract class SmartHomeApplication {
 //   TvModel tvModel;

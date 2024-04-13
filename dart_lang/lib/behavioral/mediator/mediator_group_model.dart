@@ -1,4 +1,4 @@
-import 'package:Strategy_design/behavioral/mediator/mediator_user_model.dart';
+import 'package:dart_lang/behavioral/mediator/mediator_user_model.dart';
 
 // class GroupModel {
 //   final String name;

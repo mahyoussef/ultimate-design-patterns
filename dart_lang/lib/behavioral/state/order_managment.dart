@@ -1,6 +1,6 @@
-import 'package:Strategy_design/behavioral/state/new_order_state.dart';
-import 'package:Strategy_design/behavioral/state/order_model.dart';
-import 'package:Strategy_design/behavioral/state/order_state.dart';
+import 'package:dart_lang/behavioral/state/new_order_state.dart';
+import 'package:dart_lang/behavioral/state/order_model.dart';
+import 'package:dart_lang/behavioral/state/order_state.dart';
 
 class OrderManagement {
   OrderModel orderModel;

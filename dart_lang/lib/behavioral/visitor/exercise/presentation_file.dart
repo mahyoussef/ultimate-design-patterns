@@ -1,5 +1,5 @@
-import 'package:Strategy_design/behavioral/visitor/exercise/document_management.dart';
-import 'package:Strategy_design/behavioral/visitor/exercise/document_management_visitor.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/document_management.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/document_management_visitor.dart';
 
 class PresenationFile implements DocumentTypesVisitor {
   @override

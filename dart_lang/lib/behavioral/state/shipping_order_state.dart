@@ -1,6 +1,6 @@
-import 'package:Strategy_design/behavioral/state/delever_order_state.dart';
-import 'package:Strategy_design/behavioral/state/order_managment.dart';
-import 'package:Strategy_design/behavioral/state/order_state.dart';
+import 'package:dart_lang/behavioral/state/delever_order_state.dart';
+import 'package:dart_lang/behavioral/state/order_managment.dart';
+import 'package:dart_lang/behavioral/state/order_state.dart';
 
 class ShippingOrderState implements OrderState {
   final OrderManagement orderManagement;

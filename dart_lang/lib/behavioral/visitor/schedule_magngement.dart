@@ -1,4 +1,4 @@
-import 'package:Strategy_design/behavioral/visitor/schedule_management_visitor.dart';
+import 'package:dart_lang/behavioral/visitor/schedule_management_visitor.dart';
 
 abstract class ScheduleManagement {
   void generateReport();

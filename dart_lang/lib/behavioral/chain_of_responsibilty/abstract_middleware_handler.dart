@@ -1,6 +1,6 @@
 
-import 'package:Strategy_design/behavioral/chain_of_responsibilty/middleware_handler.dart';
-import 'package:Strategy_design/behavioral/chain_of_responsibilty/model/request_model.dart';
+import 'package:dart_lang/behavioral/chain_of_responsibilty/middleware_handler.dart';
+import 'package:dart_lang/behavioral/chain_of_responsibilty/model/request_model.dart';
 
 class AbstractMidlleWareHandler implements MiddleWareHandler {
   MiddleWareHandler? nextHandler;

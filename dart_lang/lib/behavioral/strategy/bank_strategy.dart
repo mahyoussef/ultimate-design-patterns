@@ -1,4 +1,4 @@
-import 'package:Strategy_design/behavioral/strategy/payment_strategy.dart';
+import 'package:dart_lang/behavioral/strategy/payment_strategy.dart';
 
 class BankStrategy implements PaymentStrategy {
   @override

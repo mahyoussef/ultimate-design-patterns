@@ -1,7 +1,7 @@
-import 'package:Strategy_design/behavioral/state/cancel_order_state.dart';
-import 'package:Strategy_design/behavioral/state/order_managment.dart';
-import 'package:Strategy_design/behavioral/state/order_state.dart';
-import 'package:Strategy_design/behavioral/state/processing_order_state.dart';
+import 'package:dart_lang/behavioral/state/cancel_order_state.dart';
+import 'package:dart_lang/behavioral/state/order_managment.dart';
+import 'package:dart_lang/behavioral/state/order_state.dart';
+import 'package:dart_lang/behavioral/state/processing_order_state.dart';
 
 class NewOrderState implements OrderState {
   final OrderManagement orderManagement;

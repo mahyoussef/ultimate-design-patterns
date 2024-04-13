@@ -1,5 +1,5 @@
-import 'package:Strategy_design/structural/adapter/models.dart/temperature_data.dart';
-import 'package:Strategy_design/structural/adapter/third_party_service.dart';
+import 'package:dart_lang/structural/adapter/models.dart/temperature_data.dart';
+import 'package:dart_lang/structural/adapter/third_party_service.dart';
 
 class LegacyWeatherService {
   ThirdPArtyServices thirdPArtyServices;
@@ -9,8 +9,4 @@ class LegacyWeatherService {
     print('Getting temperature from legacy weather service');
     return thirdPArtyServices.getTemperature(city, country);
   }
-
-
-
-
 }

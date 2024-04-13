@@ -1,7 +1,7 @@
-import 'package:Strategy_design/behavioral/visitor/exercise/document_management.dart';
-import 'package:Strategy_design/behavioral/visitor/exercise/presentation_file.dart';
-import 'package:Strategy_design/behavioral/visitor/exercise/spread_sheet_file.dart';
-import 'package:Strategy_design/behavioral/visitor/exercise/text_file.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/document_management.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/presentation_file.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/spread_sheet_file.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/text_file.dart';
 
 class ExtreactText implements DocuemntManagement {
   @override

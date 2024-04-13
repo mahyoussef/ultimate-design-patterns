@@ -1,6 +1,6 @@
-import 'package:Strategy_design/behavioral/visitor/exercise/presentation_file.dart';
-import 'package:Strategy_design/behavioral/visitor/exercise/spread_sheet_file.dart';
-import 'package:Strategy_design/behavioral/visitor/exercise/text_file.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/presentation_file.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/spread_sheet_file.dart';
+import 'package:dart_lang/behavioral/visitor/exercise/text_file.dart';
 
 abstract class DocuemntManagement {
   void visitTextFile(TextFile textFile);

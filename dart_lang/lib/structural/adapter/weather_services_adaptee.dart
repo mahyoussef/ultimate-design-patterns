@@ -1,6 +1,6 @@
-import 'package:Strategy_design/structural/adapter/abstract_weather_services_adapter.dart';
-import 'package:Strategy_design/structural/adapter/legacy_weather_service.dart';
-import 'package:Strategy_design/structural/adapter/models.dart/temperature_data.dart';
+import 'package:dart_lang/structural/adapter/abstract_weather_services_adapter.dart';
+import 'package:dart_lang/structural/adapter/legacy_weather_service.dart';
+import 'package:dart_lang/structural/adapter/models.dart/temperature_data.dart';
 
 class WeatherServiceAdaptee implements WeatherServicesAdapterInterface {
   final LegacyWeatherService legacyWeatherService;
@@ -15,7 +15,7 @@ class WeatherServiceAdaptee implements WeatherServicesAdapterInterface {
     return convertXMLDataToJson(temperatureDataXML);
   }
 
-   TemperatureData convertXMLDataToJson(String temperatureDataXML) {
+  TemperatureData convertXMLDataToJson(String temperatureDataXML) {
     print('Converting XML data to JSON');
     return TemperatureData('Temperature Data in JSON Format');
   }
@@ -29,5 +29,4 @@ class WeatherServiceAdaptee implements WeatherServicesAdapterInterface {
     print('Extracting Country name from $longitude and $latitude');
     return 'Country Name';
   }
-
 }

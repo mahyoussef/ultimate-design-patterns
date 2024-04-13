@@ -1,5 +1,5 @@
-import 'package:Strategy_design/behavioral/state/order_managment.dart';
-import 'package:Strategy_design/behavioral/state/order_state.dart';
+import 'package:dart_lang/behavioral/state/order_managment.dart';
+import 'package:dart_lang/behavioral/state/order_state.dart';
 
 class CancelOrderState implements OrderState {
   final OrderManagement orderManagement;

@@ -1,4 +1,4 @@
-import 'package:Strategy_design/behavioral/strategy/pricing_strategy.dart';
+import 'package:dart_lang/behavioral/strategy/pricing_strategy.dart';
 
 class Product {
   String name;

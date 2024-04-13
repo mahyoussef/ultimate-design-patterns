@@ -1,5 +1,5 @@
-import 'package:Strategy_design/behavioral/visitor/schedule_magngement.dart';
-import 'package:Strategy_design/behavioral/visitor/schedule_management_visitor.dart';
+import 'package:dart_lang/behavioral/visitor/schedule_magngement.dart';
+import 'package:dart_lang/behavioral/visitor/schedule_management_visitor.dart';
 
 class RemoteWorkShiftScheduleManagement implements ScheduleManagement {
   @override

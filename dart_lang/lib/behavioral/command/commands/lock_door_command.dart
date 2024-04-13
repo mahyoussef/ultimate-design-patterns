@@ -1,5 +1,5 @@
-import 'package:Strategy_design/behavioral/command/command_interface.dart';
-import 'package:Strategy_design/behavioral/command/models/door_model.dart';
+import 'package:dart_lang/behavioral/command/command_interface.dart';
+import 'package:dart_lang/behavioral/command/models/door_model.dart';
 
 class LockDoor implements CommandInterface {
   final DoorModel door;

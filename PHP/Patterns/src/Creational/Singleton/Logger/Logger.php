@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creational\Singleton\Logger;
+namespace App\Creational\Singleton\Logger;
 
 abstract class Logger
 {

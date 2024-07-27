@@ -1,5 +1,5 @@
 <?php
-namespace DesignPatterns\Creational\Singleton\Logger;
+namespace App\Creational\Singleton\Logger;
 
 class LazySingleton extends Logger
 {

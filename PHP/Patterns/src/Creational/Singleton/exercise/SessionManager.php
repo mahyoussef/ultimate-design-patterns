@@ -1,4 +1,6 @@
 <?php
+
+namespace App\Creational\Singleton\exercise;
 class SessionManager
 {
     private static ?SessionManager $instance = null;
@@ -23,6 +25,7 @@ class SessionManager
         if (self::$instance === null) {
             self::$instance = new self();
         }
+
         return self::$instance;
     }
 

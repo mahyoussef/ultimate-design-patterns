@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creational\Singleton\Logger;
+namespace App\Creational\Singleton\Logger;
 
 enum LogLevel: int {
     case DEBUG = 1;

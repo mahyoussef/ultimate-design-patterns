@@ -2,7 +2,7 @@
 
 namespace App\Structural\Facade;
 
-enum PaymentMethodOptions
+enum aymentMethodOptions
 {
     case MASTER_CARD;
     case VISA;

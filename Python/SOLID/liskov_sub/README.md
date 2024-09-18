@@ -9,12 +9,13 @@ For example:
   to use "Dog" and the program will still work just fine.
 
 ## Problem
+![order](https://github.com/user-attachments/assets/3b14ef0a-d48b-44a0-aee3-ad194b3ef889)
 
-![order](https://github.com/user-attachments/assets/5d3f4d24-3aae-483b-8dce-5e88b40f885f)
 
 ## Solution
-![carbon (1)](https://github.com/user-attachments/assets/525b566a-f651-4f9c-9a79-0eda38a644b5)
-![carbon (2)](https://github.com/user-attachments/assets/98e08e4f-d99f-4437-b66b-ee84f98a5c41)
+![carbon (1)](https://github.com/user-attachments/assets/75f60428-7b3f-4a1f-abe1-e1c134da9c04)
+![carbon (2)](https://github.com/user-attachments/assets/e31f144c-c72f-4866-928c-e24e78dd746e)
+
 
 
 

@@ -50,6 +50,8 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 - **Visitor**: [implementation](patterns/visitor/bundle.ts)
 
+- **Iterator**: [implementation](patterns/iterator/bundle.ts)
+
 ### Structural Design Patterns
 
 - **Adapter**: [implementation](patterns/adapter/bundle.ts)

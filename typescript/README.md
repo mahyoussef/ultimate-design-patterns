@@ -44,6 +44,18 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 - **Template**: [UML diagram](patterns/template/uml-diagram.md) - [implementation](patterns/template/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/exercise/bundle.ts)
 
+- **Chain of Responsibility**: [implementation](patterns/chain-of-responsibility/bundle.ts)
+
+- **Memento**: [implementation](patterns/memento/bundle.ts)
+
+### Structural Design Patterns
+
+- **Adapter**: [implementation](patterns/adapter//bundle.ts)
+
+- **Composite**: [implementation](patterns/composite/bundle.ts)
+
+- **Proxy**: [implementation](patterns/proxy/bundle.ts)
+
 ### Creational Design Patterns
 
 - **Factory**: [UML diagram](patterns/factory/uml-diagram.md) - [implementation](patterns/factory/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/exercise/bundle.ts)

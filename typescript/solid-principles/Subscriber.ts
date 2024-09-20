@@ -1,4 +1,4 @@
-import { SubscriptionNotificationService } from "./SubscriptionNotificationService";
+import { SubscriptionNotificationService } from "./subscription-notification-service";
 
 export class Subscriber implements SubscriptionNotificationService{
 

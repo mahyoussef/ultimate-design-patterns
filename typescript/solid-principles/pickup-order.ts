@@ -1,5 +1,5 @@
 import { Order } from "./Order";
-import { ShippingCostCalculator } from "./ShippingCostCalculator";
+import { ShippingCostCalculator } from "./shipping-cost-calculator";
 
 export class PickupOrder extends Order implements ShippingCostCalculator {
     

@@ -1,6 +1,6 @@
 import { Order } from "./Order";
-import { PaymentProcessor } from "./PaymentProcessor";
-import { VisaPaymentStrategy } from "./VisaPaymentStrategy";
+import { PaymentProcessor } from "./payment-processor";
+import { VisaPaymentStrategy } from "./visa-paymentStrategy";
 
 const paymentProcessor: PaymentProcessor = new PaymentProcessor(
   new VisaPaymentStrategy()

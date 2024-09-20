@@ -1,5 +1,5 @@
-import { SubscriptionNotificationService } from "./SubscriptionNotificationService";
-import { UserManagement } from "./UserManagment";
+import { SubscriptionNotificationService } from "./subscription-notification-service";
+import { UserManagement } from "./user-managment";
 
 export class Customer implements UserManagement, SubscriptionNotificationService  {
     private name: string;

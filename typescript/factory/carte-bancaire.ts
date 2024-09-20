@@ -1,4 +1,4 @@
-import { LocalPaymentMethod } from "./LocalPaymentMethod";
+import { LocalPaymentMethod } from "./local-payment-method";
 
 export class CarteBancaire extends LocalPaymentMethod {
     constructor(

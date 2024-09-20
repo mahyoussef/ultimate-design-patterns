@@ -1,8 +1,8 @@
-import { SocialMediaAuthFactory } from "./SocialMediaAuthFactory";
-import { TwoFactorAuthFactory } from "./TwoFactorAuthFactory";
-import { UsernamePasswordAuthFactory } from "./UsernamePasswordAuthFactory";
+import { SocialMediaAuthFactory } from "./social-media-auth-factory";
+import { TwoFactorAuthFactory } from "./two-factor-auth-factory";
+import { UsernamePasswordAuthFactory } from "./username-password-auth-factory";
 import type { Authentication } from "./Authentication";
-import type { AuthenticationFactory } from "./AuthenticationFactory";
+import type { AuthenticationFactory } from "./authentication-factory";
 
 // Create an instance of the authentication factories
 const socialMediaAuthFactory: AuthenticationFactory =

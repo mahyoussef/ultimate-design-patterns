@@ -1,4 +1,4 @@
-import { TextEditorState } from "./TextEditorState";
+import { TextEditorState } from "./text-editor-state";
 
 export class History {
   private prevStates!: TextEditorState[];

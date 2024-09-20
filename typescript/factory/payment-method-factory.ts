@@ -1,4 +1,4 @@
-import { CardType } from "./CardType";
+import { CardType } from "./card-type";
 
 export interface PaymentMethod {
   authorizePayment(): void;

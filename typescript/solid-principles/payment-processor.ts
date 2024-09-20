@@ -1,6 +1,6 @@
 import { Order } from "./Order";
 import { Payment } from "./Payment";
-import { PaymentStrategy } from "./PaymentStrategy";
+import { PaymentStrategy } from "./payment-strategy";
 
 export class PaymentProcessor {
 

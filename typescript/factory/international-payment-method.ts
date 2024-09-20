@@ -1,4 +1,4 @@
-import { PaymentMethod } from "./PaymentMethodFactory";
+import { PaymentMethod } from "./payment-method-factory";
 
 export abstract class InternationalPaymentMethod implements PaymentMethod {
     private cardHolder: string;

@@ -1,4 +1,4 @@
-import { LocalPaymentMethod } from "./LocalPaymentMethod";
+import { LocalPaymentMethod } from "./local-payment-method";
 
 export class Diners extends LocalPaymentMethod {
     constructor(

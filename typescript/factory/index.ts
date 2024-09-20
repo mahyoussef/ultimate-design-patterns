@@ -1,7 +1,7 @@
-import { CardType } from "./CardType";
-import { InternationalPaymentMethodFactory } from "./InternationalPaymentMethodFactory";
-import { PaymentMethodFactory } from "./PaymentMethodFactory";
-import { PaymentProcessor } from "./PaymentProcessor";
+import { CardType } from "./card-type";
+import { InternationalPaymentMethodFactory } from "./international-payment-method-factory";
+import { PaymentMethodFactory } from "./payment-method-factory";
+import { PaymentProcessor } from "./payment-processor";
 
 // Example of usage
 const paymentMethodFactory: PaymentMethodFactory =

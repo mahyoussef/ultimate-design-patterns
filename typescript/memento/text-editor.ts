@@ -1,4 +1,4 @@
-import { TextEditorState } from "./TextEditorState";
+import { TextEditorState } from "./text-editor-state";
 
 export class TextEditor {
   private content: string;

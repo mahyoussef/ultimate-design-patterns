@@ -1,4 +1,4 @@
-import { CanvasState } from "./CanvasState";
+import { CanvasState } from "./canvas-state";
 
 export class History {
   private prevStates!: CanvasState[];

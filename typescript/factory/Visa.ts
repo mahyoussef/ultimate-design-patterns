@@ -1,4 +1,4 @@
-import { InternationalPaymentMethod } from "./InternationalPaymentMethod";
+import { InternationalPaymentMethod } from "./international-payment-method";
 
 export class Visa extends InternationalPaymentMethod {
     constructor(

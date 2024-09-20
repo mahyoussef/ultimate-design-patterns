@@ -1,8 +1,8 @@
-import { CardType } from "./CardType";
+import { CardType } from "./card-type";
 import { MasterCard } from "./MasterCard";
-import { PaymentMethod, PaymentMethodFactory } from "./PaymentMethodFactory";
+import { PaymentMethod, PaymentMethodFactory } from "./payment-method-factory";
 import { Visa } from "./Visa";
-import { AmericanExpress } from "./AmericanExpress";
+import { AmericanExpress } from "./american-express";
 
 export class InternationalPaymentMethodFactory implements PaymentMethodFactory {
     createPaymentMethod(

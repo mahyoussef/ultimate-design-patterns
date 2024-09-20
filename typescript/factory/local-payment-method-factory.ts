@@ -1,7 +1,7 @@
-import { CardType } from "./CardType";
-import { CarteBancaire } from "./CarteBancaire";
+import { CardType } from "./card-type";
+import { CarteBancaire } from "./carte-bancaire";
 import { Diners } from "./Diners";
-import { PaymentMethod, PaymentMethodFactory } from "./PaymentMethodFactory";
+import { PaymentMethod, PaymentMethodFactory } from "./payment-method-factory";
 
 export class LocalPaymentMethodFactory implements PaymentMethodFactory {
     createPaymentMethod(

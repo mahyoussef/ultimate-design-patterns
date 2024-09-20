@@ -1,5 +1,5 @@
 import { History } from "./History";
-import { TextEditor } from "./TextEditor";
+import { TextEditor } from "./text-editor";
 
 let textEditor = new TextEditor();
 let history = new History();

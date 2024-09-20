@@ -1,6 +1,6 @@
 import { Authentication } from "./Authentication";
-import { AuthenticationFactory } from "./AuthenticationFactory";
-import { UsernamePasswordAuthentication } from "./UsernamePasswordAuthentication";
+import { AuthenticationFactory } from "./authentication-factory";
+import { UsernamePasswordAuthentication } from "./username-password-authentication";
 
 export class UsernamePasswordAuthFactory implements AuthenticationFactory {
     createAuthentication(): Authentication {

@@ -1,5 +1,5 @@
-import { CardType } from "./CardType";
-import { PaymentMethod, PaymentMethodFactory } from "./PaymentMethodFactory";
+import { CardType } from "./card-type";
+import { PaymentMethod, PaymentMethodFactory } from "./payment-method-factory";
 
 export class PaymentProcessor {
     private readonly paymentMethodFactory: PaymentMethodFactory;

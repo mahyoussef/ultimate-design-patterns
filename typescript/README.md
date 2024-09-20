@@ -56,6 +56,8 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 - **Mediator**: [implementation](patterns/mediator/bundle.ts)
 
+- **Command**: [implementation](patterns/command/bundle.ts)
+
 ### Structural Design Patterns
 
 - **Adapter**: [implementation](patterns/adapter/bundle.ts)

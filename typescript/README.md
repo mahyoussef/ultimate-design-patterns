@@ -48,9 +48,11 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 - **Memento**: [implementation](patterns/memento/bundle.ts)
 
+- **Visitor**: [implementation](patterns/visitor/bundle.ts)
+
 ### Structural Design Patterns
 
-- **Adapter**: [implementation](patterns/adapter//bundle.ts)
+- **Adapter**: [implementation](patterns/adapter/bundle.ts)
 
 - **Composite**: [implementation](patterns/composite/bundle.ts)
 

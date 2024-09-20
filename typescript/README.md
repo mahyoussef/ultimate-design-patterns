@@ -34,16 +34,16 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 ## List of Patterns
 
-[SOLID Principles](solid)
+[SOLID Principles](solid-principles)
 
 ### Behavioral Design Patterns
 
-- **Observer**: [UML diagram](observer/uml-diagram.md) - [implementation](observer/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/exercise/bundle.ts)
+- **Observer**: [UML diagram](patterns/observer/uml-diagram.md) - [implementation](patterns/observer/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/exercise/bundle.ts)
 
-- **Strategy**: [UML diagram](strategy/uml-diagram.md) - [implementation](strategy/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/exercise/bundle.ts)
+- **Strategy**: [UML diagram](patterns/strategy/uml-diagram.md) - [implementation](patterns/strategy/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/exercise/bundle.ts)
 
-- **Template**: [UML diagram](template/uml-diagram.md) - [implementation](template/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/exercise/bundle.ts)
+- **Template**: [UML diagram](patterns/template/uml-diagram.md) - [implementation](patterns/template/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/exercise/bundle.ts)
 
 ### Creational Design Patterns
 
-- **Factory**: [UML diagram](factory/uml-diagram.md) - [implementation](factory/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/exercise/bundle.ts)
+- **Factory**: [UML diagram](patterns/factory/uml-diagram.md) - [implementation](patterns/factory/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/exercise/bundle.ts)

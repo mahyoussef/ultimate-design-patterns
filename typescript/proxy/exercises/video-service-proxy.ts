@@ -1,4 +1,5 @@
 import { MediaStreaming } from "./media-streaming.interface";
+import { User } from "./User";
 import { VideoService } from "./video-service";
 
 export class VideoServiceProxy implements MediaStreaming {
@@ -16,7 +17,7 @@ export class VideoServiceProxy implements MediaStreaming {
       this.videoService.playVideo(videoId);
       // Log user interaction
       console.log(
-        `Logged user interaction: ${this.user.getUsername()} watched video ${videoId}`
+        `Logged user interaction: ${this.user.getUsername()} watched video ${videoId}`,
       );
     } else {
       console.log(`Access denied for video: ${videoId}`);

@@ -52,6 +52,8 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 - **Iterator**: [implementation](patterns/iterator/bundle.ts)
 
+- **State**: [implementation](patterns/state/bundle.ts)
+
 ### Structural Design Patterns
 
 - **Adapter**: [implementation](patterns/adapter/bundle.ts)

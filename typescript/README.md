@@ -76,4 +76,6 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 ### Creational Design Patterns
 
+- **builder**: [implementation](patterns/builder/bundle.ts)
+
 - **Factory**: [UML diagram](patterns/factory/uml-diagram.md) - [implementation](patterns/factory/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/exercise/bundle.ts)

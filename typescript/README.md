@@ -34,7 +34,9 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 ## List of Patterns
 
-[SOLID Principles](solid-principles)
+### SOLID Principles
+
+- [**SOLID principles implementation**](solid-principles)
 
 ### Behavioral Design Patterns
 

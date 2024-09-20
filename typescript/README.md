@@ -68,6 +68,8 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 - **Decorator**: [implementation](patterns/decorator/bundle.ts)
 
+- **Facade**: [implementation](patterns/facade/bundle.ts)
+
 - **Proxy**: [implementation](patterns/proxy/bundle.ts)
 
 ### Creational Design Patterns

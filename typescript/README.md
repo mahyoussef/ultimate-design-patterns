@@ -62,6 +62,8 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 - **Adapter**: [implementation](patterns/adapter/bundle.ts)
 
+- **Bridge**: [implementation](patterns/bridge/bundle.ts)
+
 - **Composite**: [implementation](patterns/composite/bundle.ts)
 
 - **Proxy**: [implementation](patterns/proxy/bundle.ts)

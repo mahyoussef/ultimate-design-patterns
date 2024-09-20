@@ -2,7 +2,7 @@ import {AuthenticationMiddlewareHandler} from "./authentication-middleware-handl
 import {AuthorizationMiddlewareHandler} from "./authorization-middleware-handler";
 import {ChainRequest} from "./request";
 import {RequestProcessor} from "./request-processor";
-import {SecurityChecksMiddlewareHandler} from "./securityChecks-middleware-handler";
+import {SecurityChecksMiddlewareHandler} from "./security-checks-middleware-handler";
 
 let authentication = new AuthenticationMiddlewareHandler();
 let authorization = new AuthorizationMiddlewareHandler();

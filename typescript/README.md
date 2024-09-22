@@ -85,3 +85,7 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 - **Prototype**: [implementation](patterns/prototype/bundle.ts)
 
 - **Factory**: [UML diagram](patterns/factory/uml-diagram.md) - [implementation](patterns/factory/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/exercise/bundle.ts)
+
+#### Ultimate Design Pattern Challenge
+
+- **Solution**: [implementation](patterns/ultimate-design-pattern-challenge/bundle.ts)

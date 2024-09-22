@@ -1,0 +1,3 @@
+interface VideoQuality {
+  render(): void;
+}

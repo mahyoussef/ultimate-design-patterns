@@ -34,16 +34,58 @@ And of course, you may first compile TypeScript code to JavaScript as usual usin
 
 ## List of Patterns
 
-[SOLID Principles](solid)
+### SOLID Principles
+
+- [**SOLID principles implementation**](solid-principles)
 
 ### Behavioral Design Patterns
 
-- **Observer**: [UML diagram](observer/uml-diagram.md) - [implementation](observer/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/exercise/bundle.ts)
+- **Observer**: [UML diagram](patterns/observer/uml-diagram.md) - [implementation](patterns/observer/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/observer/exercise/bundle.ts)
 
-- **Strategy**: [UML diagram](strategy/uml-diagram.md) - [implementation](strategy/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/exercise/bundle.ts)
+- **Strategy**: [UML diagram](patterns/strategy/uml-diagram.md) - [implementation](patterns/strategy/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/strategy/exercise/bundle.ts)
 
-- **Template**: [UML diagram](template/uml-diagram.md) - [implementation](template/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/exercise/bundle.ts)
+- **Template**: [UML diagram](patterns/template/uml-diagram.md) - [implementation](patterns/template/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/template/exercise/bundle.ts)
+
+- **Chain of Responsibility**: [implementation](patterns/chain-of-responsibility/bundle.ts)
+
+- **Memento**: [implementation](patterns/memento/bundle.ts)
+
+- **Visitor**: [implementation](patterns/visitor/bundle.ts)
+
+- **Iterator**: [implementation](patterns/iterator/bundle.ts)
+
+- **State**: [implementation](patterns/state/bundle.ts)
+
+- **Mediator**: [implementation](patterns/mediator/bundle.ts)
+
+- **Command**: [implementation](patterns/command/bundle.ts)
+
+### Structural Design Patterns
+
+- **Adapter**: [implementation](patterns/adapter/bundle.ts)
+
+- **Bridge**: [implementation](patterns/bridge/bundle.ts)
+
+- **Composite**: [implementation](patterns/composite/bundle.ts)
+
+- **Decorator**: [implementation](patterns/decorator/bundle.ts)
+
+- **Facade**: [implementation](patterns/facade/bundle.ts)
+
+- **Proxy**: [implementation](patterns/proxy/bundle.ts)
+
+- **FlyWeight**: [implementation](patterns/flyweight/bundle.ts)
 
 ### Creational Design Patterns
 
-- **Factory**: [UML diagram](factory/uml-diagram.md) - [implementation](factory/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/exercise/bundle.ts)
+- **Builder**: [implementation](patterns/builder/bundle.ts)
+
+- **Singleton**: [implementation](patterns/singleton/bundle.ts)
+
+- **Prototype**: [implementation](patterns/prototype/bundle.ts)
+
+- **Factory**: [UML diagram](patterns/factory/uml-diagram.md) - [implementation](patterns/factory/bundle.ts) - [playground](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/bundle.ts) - [exercise](https://livecodes.io/?console&x=https://github.com/mahyoussef/ultimate-design-patterns/blob/main/typescript/factory/exercise/bundle.ts)
+
+#### Ultimate Design Pattern Challenge
+
+- **Solution**: [implementation](patterns/ultimate-design-pattern-challenge/bundle.ts)

@@ -16,3 +16,20 @@
 
 
 
+## Type Hinting
+In Python, type hinting is used to indicate the expected types of variables. It helps with code readability and can assist in debugging. Here’s what each part means:
+![carbon (3)](https://github.com/user-attachments/assets/8a946a8e-e58f-46b8-ae6b-1d5eb74d3582)
+
+```self.subscribers: Dict[EventType, List[Subscriber]]:```
+- This indicates that ```self.subscribers``` is a dictionary.
+- The keys of this dictionary are of type EventType (which is an enum representing different events).
+- The values are lists containing objects that implement the Subscriber interface.
+- So, it means you’ll have a mapping from event types to lists of subscribers interested in those events.
+
+```self.products: List[Product]:```
+This indicates that ```self.products``` is a list containing Product objects.
+This list will store all the products added to the marketplace.
+
+```self.offers: List[Offer]:```
+Similar to self.products, this indicates that self.offers is a list containing Offer objects.
+This list will store all the offers added to the marketplace.

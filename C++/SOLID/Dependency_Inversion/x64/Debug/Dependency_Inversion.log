@@ -1,0 +1,6 @@
+﻿  Program.cpp
+C:\Users\Dell\Desktop\ultimate-design-patterns\C++\SOLID\Dependency_Inversion\Program.cpp(3,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Dell\Desktop\ultimate-design-patterns\C++\SOLID\Dependency_Inversion\Program.cpp(4,9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Dependency_Inversion.vcxproj -> C:\Users\Dell\Desktop\ultimate-design-patterns\C++\SOLID\x64\Debug\Dependency_Inversion.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

@@ -1,5 +1,5 @@
 from Python.SOLID.OrderManagement import Order
-from Python.SOLID.PaymentStrategy import PaymentStrategy
+from Python.SOLID.PaymentTypes import PaymentStrategy
 
 
 class Payment:
